@@ -62,3 +62,16 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
 }
 @media(min-width:900px){.h18 .w{justify-content:flex-start!important}.h18 .copy{margin-left:0!important;margin-right:auto!important}}
 @media(max-width:899px){.h18 .lede{display:block!important;-webkit-line-clamp:unset;overflow:visible}}
+.hero-rot{position:absolute;inset:0;overflow:hidden}
+.hero-rot .hr{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 40%;opacity:0;transition:opacity 1.4s ease;filter:brightness(1.12) saturate(.9)}
+.hero-rot .hr.on{opacity:1}
+.glass31 h1,.glass31 .lede{text-wrap:balance}
+.glass31 .lede{max-width:30ch}
+@media(min-width:900px){.glass31 .lede{max-width:44ch}}
+@media(max-width:899px){
+  #ci-wa{bottom:96px;padding:0 12px 12px}
+  #ci-wa .wa-btn{width:48px;height:48px}
+  #ci-wa img{width:24px;height:24px}
+  .glass31 .lede{max-width:none}
+}
+.promo-float{transition:opacity .3s}@media(max-width:899px){.h18 .w{padding-bottom:28px!important}}
