@@ -60,3 +60,5 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
   .h18 .ctas{margin-top:1rem!important}
   .h18 .ctas .btn{min-height:46px!important;padding:0 1.1rem!important}
 }
+@media(min-width:900px){.h18 .w{justify-content:flex-start!important}.h18 .copy{margin-left:0!important;margin-right:auto!important}}
+@media(max-width:899px){.h18 .lede{display:block!important;-webkit-line-clamp:unset;overflow:visible}}
