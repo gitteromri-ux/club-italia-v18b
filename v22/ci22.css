@@ -412,3 +412,4 @@ h2 span,h1 span{display:block;font-style:italic;color:var(--oro)}
   .enrol{padding-top:42vh}
   .enrol-bg video{object-position:50% 50%}
 }
+@media(max-width:899px){.statement .bg-shade{background:linear-gradient(0deg,rgba(8,12,22,.94) 0%,rgba(8,12,22,.85) 42%,rgba(8,12,22,.5) 60%,rgba(8,12,22,0) 78%)!important}}
