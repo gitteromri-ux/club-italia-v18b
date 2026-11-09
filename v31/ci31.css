@@ -44,3 +44,5 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
   .h18 .ctas{flex-wrap:nowrap;gap:.8rem}
   #ci-wa{bottom:120px}
 }
+.h18 .hero-img{object-position:65% 40%;filter:brightness(1.12) saturate(.9)!important}
+@media(max-width:899px){.h18 .hero-img{object-position:62% 30%}}
