@@ -1,0 +1,37 @@
+:root{--serif:'Playfair Display',Georgia,serif;--sans:'Manrope',-apple-system,'Helvetica Neue',sans-serif}
+body{font-family:var(--sans)}
+h1,h2,h3,h4,.head h2{font-family:var(--serif)!important;font-weight:400!important}
+/* hero: palazzo, glass text box */
+.h18 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 35%;filter:brightness(1.05)}
+.h18 .tint,.h18 .side{background:linear-gradient(90deg,rgba(14,12,20,.35),rgba(14,12,20,0) 60%)!important}
+.glass31{padding:2.2rem 2.2rem 2rem;max-width:640px;border-radius:24px;
+  background:linear-gradient(140deg,rgba(14,18,30,.55),rgba(14,18,30,.34))!important;-webkit-backdrop-filter:blur(22px) saturate(1.5);backdrop-filter:blur(22px) saturate(1.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.38),inset 0 0 0 1px rgba(255,255,255,.16),0 30px 70px -30px rgba(0,0,0,.6)}
+.brand31{font:italic 400 1.05rem var(--serif);color:#F3D58A;margin-bottom:.6rem}
+.h18 h1{font-size:clamp(2.8rem,5vw,4.6rem)!important;line-height:1.04!important;color:#fff}
+.h18 h1 em{color:#F3D58A!important}
+.h18 .lede{font-size:1.12rem!important;color:#F2EFE8!important}
+@media(max-width:899px){.glass31{padding:1.5rem 1.3rem;margin:0 -6px}.h18 h1{font-size:2.6rem!important}.h18 .hero-img{object-position:75% 25%}}
+/* one rhythm: full-bleed folds, same spacing */
+.sec,section.sec{padding-top:96px!important;padding-bottom:96px!important;margin:0!important}
+.vfold{min-height:auto!important}
+.head{margin-bottom:2.4rem!important}
+@media(max-width:899px){.sec,section.sec{padding-top:72px!important;padding-bottom:72px!important}}
+/* light: brighter, less saturated */
+video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoken-"],img[src*="cap-"]{filter:brightness(1.15) saturate(.86)!important}
+.vfold .tint{background:linear-gradient(90deg,rgba(10,14,28,.55),rgba(10,14,28,.15) 60%,rgba(10,14,28,0))!important}
+/* Italian neon buttons */
+.btn-gold,.btn-it{color:#fff!important;background:linear-gradient(180deg,#2FD98A 0%,#00A651 55%,#008A43 100%)!important;border:0!important;
+  box-shadow:0 0 0 1px rgba(160,255,205,.55) inset,0 1px 0 rgba(255,255,255,.5) inset,0 10px 28px -8px rgba(0,166,81,.85),0 0 44px -6px rgba(43,227,138,.7)!important}
+/* French Atelier floater */
+.promo-float{background:linear-gradient(180deg,#12213F,#0B1630)!important;box-shadow:0 0 0 1px rgba(43,227,138,.45),0 0 34px -8px rgba(43,227,138,.55),0 18px 44px -12px rgba(0,0,0,.6)!important}
+.pf-txt small{font:italic 400 .92rem var(--serif)!important;color:#F3D58A!important}
+.pf-dot{background:#F3C84B!important;box-shadow:0 0 10px 2px rgba(243,200,75,.8)!important}
+.pf-btn{border-radius:999px!important}
+/* WhatsApp, exact Longevity button */
+#ci-wa{position:fixed;right:0;bottom:110px;z-index:59;padding:0 20px 20px}
+#ci-wa .wa-btn{display:inline-grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 0 24px rgba(0,0,0,.2)}
+#ci-wa img{width:28px;height:28px}
+@media(max-width:899px){#ci-wa{bottom:104px;padding:0 14px 16px}}
+/* faculty: studio headshots, French Atelier framing */
+.fac img,.ft img{object-fit:cover;object-position:50% 18%;filter:none!important}
