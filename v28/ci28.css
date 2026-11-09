@@ -810,3 +810,4 @@ h2{font-size:clamp(2.05rem,3.8vw,3.2rem);line-height:1.1}
 /* layered depth on course and story cards */
 .course{box-shadow:0 2px 0 rgba(255,255,255,.4) inset,0 30px 60px -28px rgba(80,40,10,.55),0 10px 20px -12px rgba(80,40,10,.35)}
 .story{box-shadow:0 30px 60px -30px rgba(80,40,10,.4),0 8px 16px -10px rgba(80,40,10,.2);border-top:3px solid transparent;border-image:linear-gradient(90deg,var(--verde-it) 0 33.3%,var(--bianco-it) 33.3% 66.6%,var(--rosso-it) 66.6%) 1}
+.fac-photo img{height:auto!important}
