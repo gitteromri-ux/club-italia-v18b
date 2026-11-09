@@ -35,3 +35,12 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
 @media(max-width:899px){#ci-wa{bottom:104px;padding:0 14px 16px}}
 /* faculty: studio headshots, French Atelier framing */
 .fac img,.ft img{object-fit:cover;object-position:50% 18%;filter:none!important}
+@media(max-width:899px){
+  .brand31{display:none}
+  .h18 .w{display:flex;flex-direction:column;justify-content:flex-end;min-height:100svh;padding-top:90px;padding-bottom:110px}
+  .glass31{height:auto!important;min-height:0!important;flex:0 0 auto;padding:1.4rem 1.2rem!important}
+  .h18 h1{font-size:2.3rem!important}
+  .h18 .lede{font-size:1rem!important}
+  .h18 .ctas{flex-wrap:nowrap;gap:.8rem}
+  #ci-wa{bottom:120px}
+}
