@@ -47,3 +47,16 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
 .h18 .hero-img{object-position:65% 40%;filter:brightness(1.12) saturate(.9)!important}
 @media(max-width:899px){.h18 .hero-img{object-position:62% 30%}}
 #ci-wa{transition:opacity .3s}
+/* smaller glass card so the statue carries the hero */
+.glass31{max-width:500px!important;padding:1.6rem 1.7rem 1.5rem!important}
+.h18 h1{font-size:clamp(2.4rem,3.8vw,3.6rem)!important}
+.h18 .lede{font-size:1rem!important;line-height:1.55!important}
+@media(min-width:900px){.h18 .w{display:flex;align-items:flex-end;min-height:100svh;padding-bottom:120px}}
+@media(max-width:899px){
+  .h18 .w{padding-bottom:96px}
+  .glass31{padding:1.1rem 1.1rem 1rem!important;max-width:none!important}
+  .h18 h1{font-size:2rem!important}
+  .h18 .lede{font-size:.95rem!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .h18 .ctas{margin-top:1rem!important}
+  .h18 .ctas .btn{min-height:46px!important;padding:0 1.1rem!important}
+}
