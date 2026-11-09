@@ -46,3 +46,4 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
 }
 .h18 .hero-img{object-position:65% 40%;filter:brightness(1.12) saturate(.9)!important}
 @media(max-width:899px){.h18 .hero-img{object-position:62% 30%}}
+#ci-wa{transition:opacity .3s}
