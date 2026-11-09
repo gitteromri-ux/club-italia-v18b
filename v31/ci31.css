@@ -75,3 +75,4 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
   .glass31 .lede{max-width:none}
 }
 .promo-float{transition:opacity .3s}@media(max-width:899px){.h18 .w{padding-bottom:28px!important}}
+@media(max-width:899px){.hero-rot .hr-tus{object-position:84% 50%}}
