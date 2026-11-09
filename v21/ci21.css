@@ -364,3 +364,10 @@ h2 span,h1 span{display:block;font-style:italic;color:var(--oro)}
 }
 .statement .bg-media{filter:saturate(1.15) contrast(1.05) brightness(1.08)}
 @media(min-width:900px){.bg-shade{background:radial-gradient(75% 85% at 22% 80%,rgba(8,12,22,.88) 0%,rgba(8,12,22,.55) 50%,rgba(8,12,22,0) 85%)!important}}
+@media(max-width:899px){
+  .hero-kick{display:none}
+  .hero-media{object-position:70% 18%}
+  .hero-shade{background:
+    linear-gradient(180deg,rgba(6,10,20,.5) 0%,rgba(6,10,20,0) 12%),
+    linear-gradient(0deg,rgba(6,10,20,.93) 0%,rgba(6,10,20,.82) 38%,rgba(6,10,20,.4) 55%,rgba(6,10,20,0) 68%)!important}
+}
