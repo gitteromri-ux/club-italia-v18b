@@ -310,3 +310,6 @@ h2 span,h1 span{display:block;font-style:italic;color:var(--oro)}
 .offer{visibility:hidden;transition:transform .45s cubic-bezier(.2,.8,.2,1),visibility 0s .45s}
 .offer.show{visibility:visible;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
 .nav:has(.drawer:not([hidden]))~.offer{visibility:hidden}
+@media(max-width:899px){
+  .hero-shade{background:linear-gradient(0deg,rgba(6,10,20,.97) 0%,rgba(6,10,20,.9) 40%,rgba(6,10,20,.68) 62%,rgba(6,10,20,.25) 85%,rgba(6,10,20,.35) 100%)}
+}
