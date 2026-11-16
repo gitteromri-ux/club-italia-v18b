@@ -276,3 +276,4 @@ video.grade,.hv video,.cap video,.city video,img[src*="course-"],img[src*="spoke
 .zshot figcaption b{display:block;font:italic 400 1.15rem var(--serif);color:#F3D58A;margin-bottom:2px}
 .curtain{display:none!important}
 .rc video{opacity:1!important}
+.vt34 video{animation:none!important;transform:none!important}
