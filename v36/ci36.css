@@ -364,3 +364,8 @@ html,body{scroll-behavior:auto!important;overscroll-behavior-y:auto}
  .vt34{height:62vh!important;max-height:520px}
  .rc{height:62vh!important;max-height:460px}
 }
+#classroom .glass,#classroom [class*=glass]{background:rgba(8,14,30,.78)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+#classroom h2,#classroom h2 *{color:#fff!important;opacity:1!important}
+#classroom h2 em{color:#F3D58A!important}
+#classroom p{color:#eef0f4!important}
+.hero-rot video{opacity:1!important}
