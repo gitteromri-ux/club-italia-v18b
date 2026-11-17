@@ -347,3 +347,20 @@ html,body{scroll-behavior:auto!important;overscroll-behavior-y:auto}
  .enroll-console.away,#ci-wa.away{transform:translateY(160%)!important;opacity:0!important;pointer-events:none!important}
  #ci-wa{transition:transform .35s,opacity .35s}
 }
+/* ===== v36 fix 3: iPhone proportions + motion even when iOS blocks video ===== */
+@keyframes kbz{from{transform:scale(1.02)}to{transform:scale(1.12) translate3d(-1.5%,-1%,0)}}
+.hero-rot{overflow:hidden}
+.hero-rot .hr{animation:kbz 16s ease-in-out infinite alternate;will-change:transform}
+.vt34 video{animation:kbz 18s ease-in-out infinite alternate!important}
+@media(max-width:900px){
+ .h18{min-height:100svh!important;height:100svh!important}
+ .h18 .hero-rot,.h18 .hr{height:100%!important;width:100%!important;object-fit:cover}
+ .sec,section{padding-top:64px!important;padding-bottom:64px!important}
+ .h18{padding:0!important}
+ h2{font-size:clamp(1.9rem,8vw,2.4rem)!important;line-height:1.12!important}
+ .lede,.sec p.lede{font-size:1.05rem!important}
+ .w{padding-left:20px!important;padding-right:20px!important}
+ img,video{max-width:100%}
+ .vt34{height:62vh!important;max-height:520px}
+ .rc{height:62vh!important;max-height:460px}
+}
