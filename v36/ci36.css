@@ -331,3 +331,19 @@ html,body{scroll-behavior:auto!important;overscroll-behavior-y:auto}
  .rc{width:calc((100% - 54px)/4);min-width:260px;height:440px}
  .prog{display:none}
 }
+/* courses: label above, cards row */
+.cards{display:flex;gap:18px}
+@media(min-width:901px){.cards{flex-wrap:wrap;width:100%}}
+@media(max-width:900px){
+ .track{display:block!important;width:auto!important;overflow:visible!important;padding:0 0 60px!important;transform:none!important}
+ .cset{display:block!important;margin-bottom:44px}
+ .clabel{width:auto!important;padding:0 20px 18px!important}
+ .cards{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding:0 20px 8px;scroll-padding-left:20px;scrollbar-width:none;gap:14px}
+ .cards::-webkit-scrollbar{display:none}
+ .rc{width:78vw!important;height:440px!important;flex:none}
+}
+/* phone: floater and WhatsApp step aside while you scroll down, return when you scroll up */
+@media(max-width:900px){
+ .enroll-console.away,#ci-wa.away{transform:translateY(160%)!important;opacity:0!important;pointer-events:none!important}
+ #ci-wa{transition:transform .35s,opacity .35s}
+}
