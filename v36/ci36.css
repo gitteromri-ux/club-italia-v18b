@@ -403,3 +403,4 @@ section p{text-wrap:pretty}
 #classroom .lesson36 figcaption{color:#eef0f4}
 @media(min-width:901px){#classroom .split>.glass{padding:3rem!important}}
 @media(max-width:900px){#classroom .split>.glass{padding:1.6rem 1.1rem!important}#classroom .lesson36{margin:22px -0.4rem 22px}}
+.lesson36 video{aspect-ratio:1920/880!important}
