@@ -426,3 +426,26 @@ section h2{max-width:none!important}
 .hero-rot img.vimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .lesson36-screen img.vimg{aspect-ratio:1920/880;height:auto!important}
 .vt34 img.vimg{position:absolute;inset:0}
+/* ===== hero proportions ===== */
+@media(min-width:901px){
+ .h18 .copy.glass31{max-width:min(700px,48vw)!important;padding:52px 56px!important}
+ .h18 h1{font-size:clamp(3.4rem,5.2vw,5.8rem)!important;line-height:1.02!important}
+ .h18 .lede{font-size:1.28rem!important;line-height:1.55!important;max-width:34ch}
+ .h18 .brand31{font-size:1rem!important}
+ .h18 .btn-big{font-size:1.05rem!important;padding:18px 34px!important}
+}
+/* ===== live class fold: clean, separated, premium ===== */
+#classroom{background:radial-gradient(120% 80% at 50% 0%,#16243f 0%,#0b1222 55%,#070b16 100%)!important;border-top:1px solid rgba(243,213,138,.18);position:relative}
+#classroom::before{content:"";position:absolute;left:50%;top:0;width:min(560px,70vw);height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#2fd27a,#fff,#e5484d,transparent);opacity:.7}
+#classroom .split>.glass{background:none!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:0!important;text-align:center}
+#classroom .split>.glass h2,#classroom .sub36{margin-left:auto!important;margin-right:auto!important}
+#classroom .lesson36{max-width:1180px;margin:40px auto 30px!important}
+.lesson36-screen{border-radius:16px!important;background:#0e0f12!important;padding:0;box-shadow:0 60px 120px -50px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.09),0 0 80px -30px rgba(47,210,122,.35)!important}
+.win-bar{display:flex;align-items:center;gap:14px;height:42px;padding:0 16px;background:linear-gradient(#1c1e23,#16181c);border-bottom:1px solid rgba(255,255,255,.06);font:500 .82rem var(--sans);color:#c9ccd3;text-align:left}
+.win-bar .dots{display:flex;gap:7px}.win-bar .dots i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.win-bar .dots i:nth-child(2){background:#febc2e}.win-bar .dots i:nth-child(3){background:#28c840}
+.win-t{flex:1;opacity:.85}
+.win-live{display:flex;align-items:center;gap:8px;color:#fff}.win-live b{width:8px;height:8px;border-radius:50%;background:#ff4d4f;box-shadow:0 0 10px #ff4d4f;animation:ec-pulse 2s infinite}
+.lesson36 video,.lesson36-screen img.vimg{aspect-ratio:1920/820!important}
+.lesson36 figcaption{text-align:center;margin:22px auto 0!important}
+#classroom .glass>ul,#classroom .glass>.feat,#classroom .glass>dl{text-align:left;max-width:1180px;margin-left:auto;margin-right:auto}
+@media(max-width:600px){.win-t{display:none}.win-bar{height:34px;font-size:.72rem}}
