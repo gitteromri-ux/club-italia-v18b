@@ -369,3 +369,24 @@ html,body{scroll-behavior:auto!important;overscroll-behavior-y:auto}
 #classroom h2 em{color:#F3D58A!important}
 #classroom p{color:#eef0f4!important}
 .hero-rot video{opacity:1!important}
+/* ===== v36 consistency pass ===== */
+section h2,section h2[style]{font-size:clamp(2rem,3.3vw,3rem)!important;line-height:1.12!important;letter-spacing:-.01em;text-wrap:balance;max-width:22ch;margin-top:0!important;margin-bottom:18px!important}
+section h2 br{display:none}
+section .eb,section .eyebrow{display:inline-block;margin-bottom:16px!important}
+section p{text-wrap:pretty}
+@media(min-width:901px){section{padding-top:112px!important;padding-bottom:112px!important}.h18{padding:0!important}}
+@media(max-width:900px){section h2,section h2[style]{font-size:clamp(1.85rem,8vw,2.3rem)!important;max-width:none}}
+/* what you will learn: each point its own tone */
+.sy-out ul,.sy-out ol{counter-reset:o;list-style:none;padding:0}
+.sy-out li{position:relative;padding:12px 0 12px 46px!important;border-bottom:1px solid rgba(20,24,34,.07);counter-increment:o;font-size:1.02rem;line-height:1.45}
+.sy-out li:last-child{border-bottom:0}
+.sy-out li::before{content:counter(o,upper-roman)!important;position:absolute;left:0;top:10px;width:32px!important;height:32px!important;border-radius:50%;display:grid;place-items:center;font:italic 500 .82rem var(--serif);color:#fff;background:none!important;box-shadow:none!important}
+.sy-out li:nth-child(6n+1)::before{background:linear-gradient(145deg,#1fbf6a,#0b7a3e)!important;box-shadow:0 0 14px rgba(31,191,106,.45)!important}
+.sy-out li:nth-child(6n+2)::before{background:linear-gradient(145deg,#f3d58a,#b8862f)!important;box-shadow:0 0 14px rgba(217,180,90,.5)!important;color:#1a1205}
+.sy-out li:nth-child(6n+3)::before{background:linear-gradient(145deg,#ff6b6f,#b3202c)!important;box-shadow:0 0 14px rgba(229,72,77,.45)!important}
+.sy-out li:nth-child(6n+4)::before{background:linear-gradient(145deg,#7aa2ff,#2a4fb8)!important;box-shadow:0 0 14px rgba(77,124,255,.45)!important}
+.sy-out li:nth-child(6n+5)::before{background:linear-gradient(145deg,#c89bff,#6b3fb8)!important;box-shadow:0 0 14px rgba(150,100,230,.45)!important}
+.sy-out li:nth-child(6n+6)::before{background:linear-gradient(145deg,#4fd8d0,#13827c)!important;box-shadow:0 0 14px rgba(40,190,180,.45)!important}
+/* course cards: still images move gently */
+.rc img{animation:kbz 20s ease-in-out infinite alternate}
+.rc:nth-child(2n) img{animation-duration:24s;animation-direction:alternate-reverse}
