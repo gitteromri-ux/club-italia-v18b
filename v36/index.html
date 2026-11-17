@@ -221,4 +221,7 @@ S.forEach(function(f){if(f.tagName==='FORM')f.addEventListener('submit',function
  go(cur+1)})});
 [].forEach.call(ov.querySelectorAll('.co-back'),function(b){b.onclick=function(){go(cur-1)}});})();</script>
 <script>(function(){var y=scrollY,f=document.getElementById("enrollConsole"),w=document.getElementById("ci-wa");addEventListener("scroll",function(){var d=scrollY-y;if(Math.abs(d)<8)return;var down=d>0&&scrollY>200;[f,w].forEach(function(e){if(e)e.classList.toggle("away",down)});y=scrollY},{passive:true})})();</script>
+<script>(function(){function inView(v){var r=v.getBoundingClientRect();return r.bottom>-100&&r.top<innerHeight+100&&r.right>0&&r.left<innerWidth&&r.width>0}
+function kick(){[].forEach.call(document.querySelectorAll("video"),function(v){if(!inView(v))return;if(v.classList.contains("hr")&&!v.classList.contains("on"))return;if(!v.getAttribute("src")&&v.dataset.src)v.src=v.dataset.src;if(v.paused){v.muted=true;v.setAttribute("muted","");v.setAttribute("playsinline","");var p=v.play();if(p&&p.catch)p.catch(function(){})}})}
+["touchend","click","keydown"].forEach(function(e){addEventListener(e,kick,{passive:true})});var t;addEventListener("scroll",function(){clearTimeout(t);t=setTimeout(kick,120)},{passive:true});addEventListener("load",kick);document.addEventListener("visibilitychange",function(){if(!document.hidden)kick()});setTimeout(kick,600)})();</script>
 </body></html>
