@@ -5,7 +5,7 @@
 <link rel="preload" as="image" href="media/hero-loop-poster.jpg?v=4">
 <link rel="stylesheet" href="../css/home17.css"><link rel="stylesheet" href="../css/v18.css">
 <link rel="stylesheet" href="../css/v19.css?v=1">
-<link rel="stylesheet" href="ci36.css?v=16"></head><body>
+<link rel="stylesheet" href="ci36.css?v=17"></head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="hdr"><div class="w"><a class="brand" href="../index.html" aria-label="Club Italia home"><span class="bn">Club Italia</span><span class="by">by <img src="../assets/img/eteacher-real-logo-white.png" alt="eTeacher Group"></span></a>
 <nav class="nav" aria-label="Primary"><a href="#classroom">Live lessons</a><a href="#courses">Courses</a><a href="#syllabus">Syllabus</a><a href="#faculty">Teachers</a><a href="#tuition">Tuition</a><a href="#enrol" class="btn btn-gold">Enrol now</a></nav>
@@ -200,4 +200,13 @@ S.forEach(function(f){if(f.tagName==='FORM')f.addEventListener('submit',function
 <script>(function(){function inView(v){var r=v.getBoundingClientRect();return r.bottom>-100&&r.top<innerHeight+100&&r.right>0&&r.left<innerWidth&&r.width>0}
 function kick(){[].forEach.call(document.querySelectorAll("video"),function(v){if(!inView(v))return;if(v.classList.contains("hr")&&!v.classList.contains("on"))return;if(!v.getAttribute("src")&&v.dataset.src)v.src=v.dataset.src;if(v.paused){v.muted=true;v.setAttribute("muted","");v.setAttribute("playsinline","");var p=v.play();if(p&&p.catch)p.catch(function(){})}})}
 ["touchend","click","keydown"].forEach(function(e){addEventListener(e,kick,{passive:true})});var t;addEventListener("scroll",function(){clearTimeout(t);t=setTimeout(kick,120)},{passive:true});addEventListener("load",kick);document.addEventListener("visibilitychange",function(){if(!document.hidden)kick()});setTimeout(kick,600)})();</script>
+<script>(function(){var iOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+function swap(v){if(v.dataset.swapped)return;var s=v.querySelector("source[media]"),src="";
+ if(s&&matchMedia(s.getAttribute("media")).matches)src=s.getAttribute("src");else{var all=v.querySelectorAll("source");if(all.length)src=all[all.length-1].getAttribute("src")}
+ if(!src)src=v.getAttribute("src")||v.dataset.src||"";if(!src)return;
+ var im=document.createElement("img");im.src=src;im.alt="";im.setAttribute("aria-hidden","true");im.className=v.className+" vimg";im.style.cssText="width:100%;height:100%;object-fit:cover;display:block";
+ v.dataset.swapped=1;v.style.display="none";v.parentNode.insertBefore(im,v)}
+function check(){[].forEach.call(document.querySelectorAll("video"),function(v){if(v.dataset.swapped)return;var r=v.getBoundingClientRect();if(r.bottom<-200||r.top>innerHeight+200)return;
+ if(iOS&&(v.paused||v.readyState<2))swap(v)})}
+if(iOS){setTimeout(check,900);setTimeout(check,2500);addEventListener("scroll",function(){clearTimeout(window.__sw);window.__sw=setTimeout(check,250)},{passive:true})}})();</script>
 </body></html>

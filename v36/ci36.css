@@ -423,3 +423,6 @@ section h2{max-width:none!important}
 .clabel p{max-width:60ch;opacity:.8;margin:0!important}
 @media(min-width:901px){.clabel{padding:0 0 22px!important;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:24px}}
 .rc .tx p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hero-rot img.vimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lesson36-screen img.vimg{aspect-ratio:1920/880;height:auto!important}
+.vt34 img.vimg{position:absolute;inset:0}
