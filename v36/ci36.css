@@ -390,3 +390,16 @@ section p{text-wrap:pretty}
 /* course cards: still images move gently */
 .rc img{animation:kbz 20s ease-in-out infinite alternate}
 .rc:nth-child(2n) img{animation-duration:24s;animation-direction:alternate-reverse}
+/* live lesson film */
+#classroom .zshots,#classroom .laptop{display:none!important}
+.lesson36{margin:0 0 8px;grid-column:1/-1;width:100%}
+.lesson36-screen{border-radius:18px;overflow:hidden;background:#111214;box-shadow:0 50px 90px -40px rgba(0,0,0,.85),0 0 0 1px rgba(255,255,255,.08),0 0 60px -18px rgba(47,210,122,.35)}
+.lesson36 video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.lesson36 figcaption{margin-top:18px;font-size:1.05rem;line-height:1.55;color:#eef0f4;max-width:60ch}
+.lesson36 figcaption b{display:block;font:italic 400 1.5rem/1.2 var(--serif);color:#F3D58A;margin-bottom:4px}
+#classroom .split{display:block!important}
+#classroom .split>.glass{max-width:1180px!important;margin:0 auto;width:100%}
+#classroom .lesson36{margin:28px 0 26px}
+#classroom .lesson36 figcaption{color:#eef0f4}
+@media(min-width:901px){#classroom .split>.glass{padding:3rem!important}}
+@media(max-width:900px){#classroom .split>.glass{padding:1.6rem 1.1rem!important}#classroom .lesson36{margin:22px -0.4rem 22px}}
