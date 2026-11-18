@@ -514,3 +514,6 @@ section .eb,section .eyebrow{color:var(--g3)!important;letter-spacing:.18em}
 .cta37 .sub36{margin:0 auto 28px;color:#dff3e8}
 .ctas37{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .cta37 .btn-ghost{color:#fff!important;border-color:rgba(255,255,255,.5)!important}
+/* v37 fixes */
+#classroom .feat6{display:grid!important;grid-template-columns:repeat(4,1fr);gap:0 24px}
+@media(max-width:900px){#classroom .feat6{grid-template-columns:1fr 1fr;gap:4px 14px}#classroom .feat6>*{padding:12px 0!important;border:0!important}}
