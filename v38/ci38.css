@@ -668,3 +668,34 @@ section.fin38 h2{font-size:clamp(2.6rem,6vw,5.6rem)!important;max-width:16ch!imp
 #enrol.e38 .form input,#enrol.e38 .form select{background:rgba(255,255,255,.95)!important;color:#14110c!important;border:0!important}
 .big38 .eb{color:#f1d68f!important;text-shadow:0 1px 12px rgba(0,0,0,.6)}
 #enrol.e38 .form input::placeholder{color:#8a8374!important;opacity:1}
+
+/* ===== v38.1: one fold system ===== */
+@media(min-width:900px){
+ .h18 .copy.glass31{max-width:min(880px,62vw)!important;width:100%;padding:44px 52px!important}
+ .h18 h1{font-size:clamp(3rem,4.1vw,4.4rem)!important;line-height:1.04!important;text-wrap:nowrap!important;white-space:nowrap}
+ .glass31 .lede{max-width:56ch!important}
+}
+/* every fold: same padding, same headline scale, same alignment */
+body main>section.sec,body section.sec,body section.rail,body section.power,body section.big38{padding-top:104px!important;padding-bottom:104px!important;margin:0!important}
+body section h2,body section .head h2,body section .top h2,section.k38 .top h2,.m38 .head h2,.f38 .head h2,.q38 .head h2,.c38 .head h2,.s38 .head h2,.j38 .head h2,.big38 h2,.fin38 h2,section.p38 h2,#level h2,#enrol h2,#classroom h2{font-size:clamp(2.6rem,4.2vw,4rem)!important;line-height:1.06!important;letter-spacing:-.005em!important}
+body section .head,body section .top{text-align:left!important;margin-left:0!important;margin-right:0!important;max-width:none!important}
+body section .head p,body section .top .sub36,body section .sub36{max-width:56ch!important;margin-left:0!important;font-size:1.15rem!important;line-height:1.6!important}
+body section .head,body section .top{margin-bottom:48px!important}
+section.p38 .w,#final .w{text-align:left!important}
+#final .ctas37{justify-content:flex-start!important}
+#final h2,#final .sub36{margin-left:0!important}
+/* image folds share one height */
+.big38,.fin38{min-height:0!important;height:auto;display:block}
+.big38 .w,.fin38 .w{padding-top:0!important;padding-bottom:0!important}
+.big38,.fin38{padding-top:240px!important;padding-bottom:104px!important}
+@media(max-width:899px){
+ body main>section.sec,body section.sec,body section.rail,body section.power,body section.big38{padding-top:64px!important;padding-bottom:64px!important}
+ .big38,.fin38{padding-top:200px!important;padding-bottom:56px!important}
+ body section h2,body section .head h2,body section .top h2,section.k38 .top h2,.m38 .head h2,.f38 .head h2,.q38 .head h2,.c38 .head h2,.s38 .head h2,.j38 .head h2,.big38 h2,.fin38 h2,section.p38 h2,#level h2,#enrol h2,#classroom h2{font-size:2.3rem!important;line-height:1.1!important}
+ body section .head p,body section .top .sub36,body section .sub36{font-size:1.05rem!important}
+ body section .head,body section .top{margin-bottom:32px!important}
+}
+#classroom .glass,#classroom .glass h2,#classroom .glass .sub36,#classroom .eb{text-align:left!important}
+#classroom .glass .sub36{margin-left:0!important}
+section.k38 .top,section.k38 .top h2,section.k38 .top .sub36{text-align:left!important}
+section.k38 .top .sub36,section.k38 .top p{margin:0!important;text-align:left!important}
