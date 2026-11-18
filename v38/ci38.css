@@ -667,3 +667,4 @@ section.fin38 h2{font-size:clamp(2.6rem,6vw,5.6rem)!important;max-width:16ch!imp
 #enrol.e38 .form h4,#enrol.e38 .form label{color:#fff!important}
 #enrol.e38 .form input,#enrol.e38 .form select{background:rgba(255,255,255,.95)!important;color:#14110c!important;border:0!important}
 .big38 .eb{color:#f1d68f!important;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+#enrol.e38 .form input::placeholder{color:#8a8374!important;opacity:1}
