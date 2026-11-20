@@ -128,3 +128,32 @@ body .sec .eb{font:600 .8rem/1.2 Manrope,sans-serif!important;letter-spacing:.16
 body .sec .head p,body .price37 p.sub,body .sec>.w>p{text-align:left!important;margin-left:0!important}
 body .cta37 .w,body .cta37 h2,body .cta37 p{text-align:left!important}body .cta37 .ctas37{justify-content:flex-start!important}
 @media(max-width:899px){.sy42c .sy-units{grid-template-columns:1fr!important;padding:4px 18px 22px!important}}
+
+/* ===== same site as the home page: home fold system on course pages ===== */
+section.f41.tD,section.f41.tD *{--x:0}
+section.f41.tC.learn37,section.f41.tC.sy37,section.f41.tC.price37,section.f41.tC.faq37,section.f41.tC.dna37,section.f41.tC.teach37{background:radial-gradient(50% 40% at 90% 0%,rgba(23,120,77,.10),transparent 65%),radial-gradient(50% 50% at 0% 100%,rgba(201,154,46,.12),transparent 60%),#f6f0e3!important}
+section.f41.tD.dna37,section.f41.tD.teach37,section.f41.tD.cta37,section.f41.tD.learn37,section.f41.tD.price37,section.f41.tD.faq37,section.f41.tD.sy37{background:radial-gradient(60% 50% at 85% 0%,rgba(241,214,143,.10),transparent 60%),radial-gradient(70% 60% at 10% 0%,#17784d 0%,rgba(15,86,56,.6) 35%,transparent 70%),linear-gradient(180deg,#07301f,#04170f)!important}
+section.f41>.w{max-width:1120px!important;margin:0 auto!important;padding:0 40px!important}
+section.f41.tC .dna37 h3,section.f41.tC h3,section.f41.tC h4{color:#14110c}
+section.f41.tD h3,section.f41.tD h4,section.f41.tD p{color:#fff}
+section.f41.tD p{color:#d5e7dd!important}
+/* dark variants of cream components */
+section.f41.tD.sy37 .sy-mod{background:#fff}
+section.f41.tD .faq37 details,section.f41.tD.faq37 details{border-color:rgba(255,255,255,.15)!important}
+section.f41.tD.faq37 summary{color:#fff!important}
+section.f41.tD.learn37 .out37>*{background:rgba(255,255,255,.06)!important;border:1px solid rgba(54,224,140,.3)!important;color:#fff!important}
+section.f41.tC.teach37 h3,section.f41.tC.teach37 p,section.f41.tC.teach37 .eb{color:#14110c!important}section.f41.tC.teach37 p{color:#4f4a3e!important}
+section.f41.tC.dna37 .eb{color:#0f5638!important}
+/* course hero: same compact lit card, low on the left */
+.ch37{min-height:min(86vh,760px)!important;display:flex!important;flex-direction:column!important;justify-content:flex-end!important;padding:132px 0 56px!important;box-sizing:border-box!important}
+.ch37>.w{max-width:1120px!important;margin:0 auto!important;padding:0 40px!important;width:100%!important;box-sizing:border-box}
+.ch37 .card37{max-width:640px!important;padding:28px 32px!important;border-radius:20px!important;background:linear-gradient(160deg,rgba(6,30,20,.62),rgba(4,18,12,.78))!important;-webkit-backdrop-filter:blur(10px) saturate(1.2)!important;backdrop-filter:blur(10px) saturate(1.2)!important;border:1px solid rgba(54,224,140,.35)!important;box-shadow:0 0 0 1px rgba(255,255,255,.05) inset,0 30px 70px -20px rgba(0,0,0,.7),0 0 60px rgba(54,224,140,.15)!important}
+.ch37 h1{font-size:3rem!important;line-height:1.08!important}
+.region37 h2{font-size:clamp(2rem,2.8vw,2.75rem)!important}
+.pn37{background:#04170f!important}
+@media(max-width:899px){section.f41>.w,.ch37>.w{padding:0 20px!important}.ch37{padding:110px 0 28px!important;min-height:92svh!important}.ch37 h1{font-size:2.1rem!important}}
+section.f41.tD .sy-mod p,section.f41.tD .sy-mod .sy-d{color:#4f4a3e!important}
+section.f41.tD .sy-mod h5,section.f41.tD .sy-mod .sy-t{color:#14110c!important}
+section.f41 .plans37 .p1 *,section.f41 .plans37 .p3 *,section.f41 .plans37>*:not(.p2) *{color:#14110c!important}
+section.f41 .plans37 .p2 *{color:#fff!important}
+section.f41 .plans37 .p1 small,section.f41 .plans37 .p3 small{color:#5b5446!important}
