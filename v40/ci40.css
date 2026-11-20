@@ -712,3 +712,16 @@ section.film39m .film39{position:relative;width:min(84vw,400px);aspect-ratio:9/1
 section.film39m video{display:block;width:100%;height:100%;object-fit:cover}
 section.film39m .film-sound{position:absolute;top:12px;right:12px;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(4,23,15,.6);color:#fff;display:grid;place-items:center}
 section.film39m .film-sound .fs-on{display:none}section.film39m .film-sound[aria-pressed="true"] .fs-on{display:block}section.film39m .film-sound[aria-pressed="true"] .fs-off{display:none}}
+/* v40.1: film lives inside the hero card */
+.h18 .copy.glass31 .film39{position:relative!important;right:auto!important;top:auto!important;transform:none!important;z-index:1}
+@media(min-width:900px){
+ .h18 .copy.glass31{max-width:min(1180px,88vw)!important;display:grid!important;grid-template-columns:minmax(0,1fr) min(22vw,300px);column-gap:48px;align-items:center}
+ .h18 .copy.glass31>*{grid-column:1}
+ .h18 .copy.glass31 .film39{grid-column:2!important;grid-row:1/span 12;width:100%!important;align-self:center}
+}
+@media(max-width:899px){
+ .h18 .copy.glass31{display:flex;flex-direction:column}
+ .h18 .copy.glass31 .film39{order:99;width:62%!important;margin:22px auto 0!important;border-radius:18px}
+}
+@media(min-width:900px){.h18 .copy.glass31{align-items:center}.h18 .copy.glass31 .cl40{grid-column:1;grid-row:1}.h18 .copy.glass31 .film39{grid-row:1!important}}
+@media(max-width:899px){.h18 .copy.glass31 .cl40{order:1}}
