@@ -725,3 +725,18 @@ section.film39m .film-sound .fs-on{display:none}section.film39m .film-sound[aria
 }
 @media(min-width:900px){.h18 .copy.glass31{align-items:center}.h18 .copy.glass31 .cl40{grid-column:1;grid-row:1}.h18 .copy.glass31 .film39{grid-row:1!important}}
 @media(max-width:899px){.h18 .copy.glass31 .cl40{order:1}}
+/* v40: Speak Italian like a local */
+section.loc40{background:radial-gradient(90% 70% at 15% 0%,#0f5638 0%,#062a1c 55%,#03130c 100%)!important;color:#fff}
+section.loc40 .eb{color:#f1d68f!important}
+section.loc40 .head h2{color:#fff!important}section.loc40 .head h2 em{color:#7ff0b5!important}
+section.loc40 .head p{color:#d3e6dc!important;font-size:1.25rem!important;max-width:60ch!important}
+.lg40{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lt40{position:relative;margin:0;border-radius:22px;overflow:hidden;aspect-ratio:16/10;background:#000;border:1px solid rgba(54,224,140,.35);box-shadow:0 0 40px rgba(54,224,140,.12),0 30px 60px -30px rgba(0,0,0,.8)}
+.lt40 video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lt40 figcaption{position:absolute;left:0;right:0;bottom:0;padding:70px 26px 24px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.78))}
+.lt40 .lt-k{display:block;font:600 .95rem/1.2 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#7ff0b5;margin-bottom:8px}
+.lt40 q{display:block;font-family:'Playfair Display',serif;font-style:italic;font-size:1.65rem;line-height:1.2;color:#fff;quotes:none}
+.lt40 small{display:block;margin-top:6px;font:500 1.05rem/1.4 Manrope,sans-serif;color:#d7e4dd}
+@media(max-width:899px){.lg40{display:flex;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:0 16px}
+.lt40{flex:0 0 86%;aspect-ratio:4/5;scroll-snap-align:start}.lt40 q{font-size:1.5rem}}
+@media(min-width:900px){.lg40{grid-template-columns:repeat(2,1fr);gap:22px}.lt40{aspect-ratio:16/9}.lt40 figcaption{padding:90px 32px 28px}.lt40 q{font-size:2rem}}
