@@ -1060,3 +1060,4 @@ html,body,a,button,*{cursor:auto}a,button,summary,[role="tab"],label{cursor:poin
  section.h18{height:min(84vh,780px)!important}
  .h18 .film39{max-height:none!important}
 }
+@media(min-width:900px){.h18 .copy.glass31{grid-template-columns:500px 250px!important;column-gap:36px!important}.h18 .glass31 .lede{max-width:500px!important}}
