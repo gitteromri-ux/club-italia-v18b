@@ -1068,3 +1068,8 @@ html,body,a,button,*{cursor:auto}a,button,summary,[role="tab"],label{cursor:poin
  .h18 .brand31{margin-bottom:6px!important}
  section.h18{height:min(78vh,720px)!important}
 }
+@media(min-width:900px){
+ section.h18{height:auto!important;min-height:min(86vh,760px)!important;padding-top:132px!important;box-sizing:border-box!important}
+ .h18 .vwrap{position:absolute!important;inset:0!important;height:100%!important}
+ .h18 .meta{padding-bottom:22px!important}.h18>.w{padding-bottom:22px!important}
+}
