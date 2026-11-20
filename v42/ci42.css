@@ -1111,3 +1111,10 @@ html,body,a,button,*{cursor:auto}a,button,summary,[role="tab"],label{cursor:poin
  #method.f41>.w{display:block!important}
 }
 @media(max-width:899px){#method.f41 .pill3{padding:0!important;margin:0!important}#method.f41 .panel{padding:20px 18px 20px 62px!important}}
+@media(max-width:899px){
+ .h18 img.hm42{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;display:block!important;z-index:0}
+ .h18 video.hr{position:absolute!important;inset:0!important;z-index:1;transition:opacity .4s}
+ .h18 video.hr.wait42{opacity:0!important}
+ #method.f41 .panel{padding-left:74px!important}
+ #level.f41 .opts span:before,#level.f41 .opts span:after{display:none!important}
+}
