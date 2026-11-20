@@ -1061,3 +1061,10 @@ html,body,a,button,*{cursor:auto}a,button,summary,[role="tab"],label{cursor:poin
  .h18 .film39{max-height:none!important}
 }
 @media(min-width:900px){.h18 .copy.glass31{grid-template-columns:500px 250px!important;column-gap:36px!important}.h18 .glass31 .lede{max-width:500px!important}}
+@media(min-width:900px){
+ .h18 .copy.glass31 .film39{aspect-ratio:4/5!important;height:auto!important}
+ .h18 .copy.glass31{padding:24px 28px!important}
+ .h18 .glass31 .lede{margin:10px 0 18px!important}
+ .h18 .brand31{margin-bottom:6px!important}
+ section.h18{height:min(78vh,720px)!important}
+}
