@@ -924,3 +924,37 @@ section#map.f41.tC:before{display:none}
 #syllabus .sy-tab b{color:#14110c!important}#syllabus .sy-tab span{color:#6b6456!important}#syllabus .sy-tab.on span{color:#0f5638!important}
 #level .vis,#level .lm .vis,#level img[src*="venezia"],#level img[src*="venice"]{display:none!important}
 #level .lm{grid-template-columns:1fr!important;max-width:900px}
+/* v42.1 tight proportions */
+:root{--wmax:1120px}
+section.f41>.w{max-width:1120px!important}
+section.f41{padding:80px 0!important}
+section.f41 h2{font-size:clamp(2rem,2.8vw,2.75rem)!important}
+section.f41 .head,section.f41 .top{margin-bottom:36px!important}
+section.f41 .head p,section.f41 .top p,section.f41 .sub36{font-size:1.05rem!important}
+@media(min-width:900px){
+ .h18 h1{font-size:clamp(2.4rem,3vw,3.2rem)!important}
+ .h18 .glass31 .lede{font-size:1.05rem!important}
+ section.h18{height:min(76vh,700px)!important;min-height:580px!important}
+ .h18 .copy.glass31{max-width:min(1040px,84vw)!important;grid-template-columns:minmax(0,1fr) 250px!important}
+ .lg40{grid-template-columns:repeat(3,1fr)!important;gap:16px!important}
+ .lt40 q{font-size:1.35rem!important}.lt40 figcaption{padding:60px 20px 18px!important}.lt40 .lt-k{font-size:.75rem!important}.lt40 small{font-size:.92rem!important}
+ #classroom .lesson36,#classroom .win36,#classroom .glass>div:not(.head){max-width:920px;margin-left:auto;margin-right:auto}
+ section.f41 .cset .cards{grid-template-columns:repeat(4,1fr)!important}
+ section.f41 .cset+.cset .cards{grid-template-columns:repeat(3,1fr)!important}
+ section.f41 .rc h4{font-size:1.25rem!important}section.f41 .rc p{font-size:.95rem!important}
+ .sy-mod summary{grid-template-columns:200px 1fr 40px!important}.sy-units{padding-left:242px!important}.sy-t{font-size:1.35rem!important}
+ .sy-tab b{font-size:1.25rem!important}
+ #map .mapgrid{max-width:1000px;margin:0 auto}
+}
+section.f41 .cset .clabel h3{font-size:1.4rem!important}section.f41 .cset .clabel{padding:22px 26px!important}
+@media(min-width:900px){section.f41 .cset .cards{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;overflow:visible!important}section.f41 .cset+.cset .cards{grid-template-columns:repeat(3,minmax(0,1fr))!important}section.f41 .cset .cards>.rc{width:auto!important;min-width:0!important;flex:none!important}}
+section.f41 .w.top,section.f41 .w.head{margin:0 auto 36px!important;max-width:1120px!important;padding:0 40px!important}
+section.f41 .top .sub36,section.f41 .top p{margin-left:0!important;padding-left:0!important}
+section.f41 .track{max-width:1120px!important;margin:0 auto!important;padding:0 40px!important}
+section.f41 .rc p{font-size:.95rem!important;line-height:1.5!important}section.f41 .rc .tx{padding:18px 20px 20px!important}
+.nav,header.nav,.hdr,header{background:rgba(6,22,15,.92)!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+@media(max-width:899px){section.f41 .w.top,section.f41 .w.head,section.f41 .track{padding:0 20px!important}}
+section.f41 .w.top,section.f41 .w.head{display:block!important}
+section#courses.f41 .top h2,section.f41 .top h2,section.f41 .head h2{font-size:clamp(2rem,2.8vw,2.75rem)!important}
+section.f41 .rc dl{display:flex!important;gap:16px!important;flex-wrap:nowrap}section.f41 .rc dl div{font-size:.72rem!important;white-space:nowrap}section.f41 .rc dd{font-size:.88rem!important;white-space:nowrap}
+.nav .links,.nav nav,.nav ul,header nav{background:none!important}
