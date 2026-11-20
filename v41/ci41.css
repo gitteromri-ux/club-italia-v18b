@@ -827,3 +827,10 @@ section.f41 .rc .lv{background:none!important;padding:0!important;top:16px!impor
  #local.f41{padding-bottom:64px!important}
  #local.f41 .head p{font-size:1.05rem!important}
 }
+.hs41{display:none}
+@media(max-width:899px){
+ .h18 video.hr{animation:none!important;object-position:50% 50%!important}
+ .hs41{display:grid;place-items:center;position:absolute;z-index:6;right:16px;top:92px;width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(4,23,15,.55);color:#fff;box-shadow:0 0 18px rgba(54,224,140,.5);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+ .hs41 .on{display:none}.hs41[aria-pressed="true"] .on{display:block}.hs41[aria-pressed="true"] .off{display:none}
+ .h18 .copy.glass31{margin-top:52svh!important}
+}
