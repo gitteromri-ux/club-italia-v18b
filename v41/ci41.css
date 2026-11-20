@@ -810,3 +810,20 @@ section.f41 .rc .lv{background:none!important;padding:0!important;top:16px!impor
  .h18 .meta,.h18 .tp,.h18 [class*="trust"]{letter-spacing:normal!important}
 }
 .h18 [class*="trust"] *{letter-spacing:.02em!important}
+@media(max-width:899px){
+ section.h18{min-height:100svh!important;display:flex!important;flex-direction:column;justify-content:flex-end}
+ .h18 .copy.glass31{margin-top:42svh!important;background:linear-gradient(180deg,rgba(4,23,15,.35),rgba(4,23,15,.82))!important;backdrop-filter:blur(6px)!important;-webkit-backdrop-filter:blur(6px)!important;border-color:rgba(54,224,140,.35)!important}
+ .h18 h1{font-size:2.3rem!important}
+ .h18 .lede{display:none!important}
+ .h18 .copy.glass31 .cta,.h18 .copy.glass31 .ctas,.h18 .copy.glass31 [class*="cta"]{flex-wrap:wrap!important;gap:16px!important}
+ .h18 [class*="trust"]{border-left:0!important;padding-left:0!important;margin-left:0!important}
+}
+@media(max-width:899px){
+ section.f41 .lt40{aspect-ratio:4/5!important;flex:0 0 84%!important}
+ .lt40 figcaption{padding:60px 20px 20px!important}
+ .lt40 .lt-k{font-size:.78rem!important}
+ .lt40 q{font-size:1.35rem!important;line-height:1.22!important}
+ .lt40 small{font-size:.98rem!important}
+ #local.f41{padding-bottom:64px!important}
+ #local.f41 .head p{font-size:1.05rem!important}
+}
