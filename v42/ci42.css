@@ -982,3 +982,28 @@ section.f41 .rc dl{display:flex!important;gap:16px!important;flex-wrap:nowrap}se
 #faq.f41 .faq,#faq.f41 .faq details{width:100%!important;max-width:none!important}
 #faq.f41 .mt{margin-top:24px!important}
 #faq.f41{padding-bottom:72px!important}
+/* v42.3 compact hero card, larger people, depth and light */
+@media(min-width:900px){
+ .h18 .copy.glass31{max-width:720px!important;grid-template-columns:minmax(0,1fr) 190px!important;column-gap:32px!important;padding:28px 32px!important;background:linear-gradient(160deg,rgba(6,30,20,.62),rgba(4,18,12,.78))!important;-webkit-backdrop-filter:blur(10px) saturate(1.2)!important;backdrop-filter:blur(10px) saturate(1.2)!important;border:1px solid rgba(54,224,140,.35)!important;box-shadow:0 0 0 1px rgba(255,255,255,.05) inset,0 30px 70px -20px rgba(0,0,0,.7),0 0 60px rgba(54,224,140,.15)!important}
+ .h18 h1{font-size:2.5rem!important;white-space:normal!important;text-wrap:balance!important}
+ .h18 .glass31 .lede{font-size:.98rem!important;line-height:1.55!important}
+ .h18 .tint,.h18 .side{opacity:.35!important}
+ .lg40{grid-template-columns:repeat(3,1fr)!important;gap:18px!important}
+ section.f41 .lt40{aspect-ratio:4/5!important}
+ .lt40 video{object-position:50% 30%}
+}
+/* depth: layered light on dark folds, warm light on cream folds */
+section.f41.tD{background:radial-gradient(60% 50% at 85% 0%,rgba(241,214,143,.10),transparent 60%),radial-gradient(70% 60% at 10% 0%,#17784d 0%,rgba(15,86,56,.6) 35%,transparent 70%),linear-gradient(180deg,#07301f,#04170f)!important}
+section.f41.tC{background:radial-gradient(50% 40% at 90% 0%,rgba(23,120,77,.10),transparent 65%),radial-gradient(50% 50% at 0% 100%,rgba(201,154,46,.12),transparent 60%),#f6f0e3!important}
+/* 3D cards: lift, inner highlight, tilt on hover */
+.lt40,.rc,.sy-mod,.ft,#journey .step,#method .panel,#stories .tc{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s!important;transform:translateZ(0);will-change:transform}
+.lg40,.cards,.sy-panel{perspective:1400px}
+@media(hover:hover){.lt40:hover,.rc:hover,#journey .step:hover,#method .panel:hover,.ft:hover{transform:translateY(-8px) rotateX(2.5deg) scale(1.015)!important;box-shadow:0 0 0 1px rgba(54,224,140,.5),0 40px 70px -25px rgba(0,0,0,.75),0 0 60px rgba(54,224,140,.3)!important}}
+.lt40,.rc,.ft{box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 0 0 1px rgba(54,224,140,.22),0 28px 50px -24px rgba(0,0,0,.7),0 0 36px rgba(54,224,140,.12)!important}
+.lt40 video,.rc>img,.sy-img img,.ft img{filter:saturate(1.12) contrast(1.06)}
+.lt40 .lt-k,section.f41 .rc .code,.sy-k{color:#f1d68f!important}
+section.f41.tD h2 em{background:linear-gradient(90deg,#7ff0b5,#f1d68f);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+section.f41.tC h2 em{background:linear-gradient(90deg,#0f5638,#b8862b);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+/* standard text */
+section.f41 .lt40 q{font-size:1.3rem!important}section.f41 .lt40 small{font-size:.95rem!important}
+section.f41 p:not(.head p):not(.top p):not(.sub36){font-size:1rem!important}
