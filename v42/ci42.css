@@ -958,3 +958,27 @@ section.f41 .w.top,section.f41 .w.head{display:block!important}
 section#courses.f41 .top h2,section.f41 .top h2,section.f41 .head h2{font-size:clamp(2rem,2.8vw,2.75rem)!important}
 section.f41 .rc dl{display:flex!important;gap:16px!important;flex-wrap:nowrap}section.f41 .rc dl div{font-size:.72rem!important;white-space:nowrap}section.f41 .rc dd{font-size:.88rem!important;white-space:nowrap}
 .nav .links,.nav nav,.nav ul,header nav{background:none!important}
+/* v42.2 one container and one headline size, enforced per fold */
+#classroom.f41>.w,#classroom.f41>.w.top,#classroom.f41 .track,#courses.f41>.w,#courses.f41>.w.top,#courses.f41 .track,#local.f41>.w,#local.f41>.w.top,#local.f41 .track,#syllabus.f41>.w,#syllabus.f41>.w.top,#syllabus.f41 .track,#journey.f41>.w,#journey.f41>.w.top,#journey.f41 .track,#method.f41>.w,#method.f41>.w.top,#method.f41 .track,#faculty.f41>.w,#faculty.f41>.w.top,#faculty.f41 .track,#map.f41>.w,#map.f41>.w.top,#map.f41 .track,#level.f41>.w,#level.f41>.w.top,#level.f41 .track,#stories.f41>.w,#stories.f41>.w.top,#stories.f41 .track,#enrol.f41>.w,#enrol.f41>.w.top,#enrol.f41 .track,#faq.f41>.w,#faq.f41>.w.top,#faq.f41 .track{max-width:1120px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;padding-left:40px!important;padding-right:40px!important;box-sizing:border-box!important}
+#classroom.f41 h2,#courses.f41 h2,#local.f41 h2,#syllabus.f41 h2,#journey.f41 h2,#method.f41 h2,#faculty.f41 h2,#map.f41 h2,#level.f41 h2,#stories.f41 h2,#enrol.f41 h2,#faq.f41 h2{font-size:clamp(2rem,2.8vw,2.75rem)!important;line-height:1.1!important;max-width:22ch!important}
+@media(max-width:899px){section.f41>.w,section.f41 .track{padding-left:20px!important;padding-right:20px!important}section.f41 h2{font-size:1.9rem!important}}
+@media(min-width:900px){
+ /* bigger imagery */
+ .sy-mod summary{grid-template-columns:320px 1fr 40px!important;gap:32px!important}
+ .sy-units{padding:8px 28px 28px 28px!important;grid-template-columns:1fr 1fr!important;gap:8px 40px!important}
+ #faculty .fac,#faculty .fgrid,#faculty [class*="grid"]{display:grid!important;grid-template-columns:repeat(7,1fr)!important;gap:14px!important}
+ #classroom .glass>*{max-width:none!important}
+ #classroom .lesson36,#classroom .win36{max-width:none!important;width:100%!important}
+ #level .lm{max-width:none!important;background:transparent!important;padding:0!important;border:0!important;box-shadow:none!important}
+ #level .opts{display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:10px!important}
+ #method.f41>.w{grid-template-columns:4fr 8fr!important;gap:48px!important}
+ #faq.f41>.w{grid-template-columns:4fr 8fr!important;gap:48px!important}
+ #map .mapgrid{max-width:none!important}
+}
+.sy-units li{grid-template-columns:40px 1fr!important}
+#classroom.f41 h2,#courses.f41 h2,#classroom.f41 .eb,#courses.f41 .eb,#classroom.f41 .sub36,#courses.f41 .sub36,#courses.f41 .top p{text-align:left!important;margin-left:0!important;margin-right:auto!important;display:block!important}
+#classroom.f41 .glass,#classroom.f41 .glass>.head,#courses.f41 .top{text-align:left!important;align-items:flex-start!important}
+#level.f41 .lm,#level.f41 form,#level.f41 .quiz{background:rgba(255,255,255,.04)!important;border:1px solid rgba(54,224,140,.3)!important;border-radius:18px!important;padding:32px!important;box-shadow:0 0 40px rgba(54,224,140,.1)!important}
+#faq.f41 .faq,#faq.f41 .faq details{width:100%!important;max-width:none!important}
+#faq.f41 .mt{margin-top:24px!important}
+#faq.f41{padding-bottom:72px!important}
