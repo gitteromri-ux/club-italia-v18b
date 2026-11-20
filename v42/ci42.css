@@ -1043,3 +1043,13 @@ section.f41 p:not(.head p):not(.top p):not(.sub36){font-size:1rem!important}
  .h18 .glass31 .lede{font-size:1.02rem!important;max-width:600px!important}
  .h18 .copy.glass31 .ctas{display:flex!important;justify-content:space-between!important;align-items:center!important;width:100%!important}
 }
+.cur,.cur-r{display:none!important}
+html,body,a,button,*{cursor:auto}a,button,summary,[role="tab"],label{cursor:pointer!important}
+@media(min-width:900px){
+ .h18 .copy.glass31{grid-template-columns:640px 190px!important}
+ .h18 h1{font-size:3.4rem!important}
+ .h18 .glass31 .lede{font-size:1.2rem!important;line-height:1.5!important;max-width:640px!important;margin:14px 0 22px!important}
+ .h18 .brand31{font-size:1.15rem!important}
+ .h18 .copy.glass31 .btn,.h18 .copy.glass31 a[class*="btn"]{font-size:1.1rem!important;padding:16px 28px!important}
+ .h18 .meta .facts b{font-size:1.9rem!important}.h18 .meta .facts div{font-size:.9rem!important}
+}
