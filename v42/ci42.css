@@ -922,3 +922,5 @@ section#map.f41.tC:before{display:none}
 #syllabus .sy-tab.on{border-bottom-color:#17784d!important}
 #syllabus .sy-tab b,#syllabus .sy-tab span{text-shadow:none!important}
 #syllabus .sy-tab b{color:#14110c!important}#syllabus .sy-tab span{color:#6b6456!important}#syllabus .sy-tab.on span{color:#0f5638!important}
+#level .vis,#level .lm .vis,#level img[src*="venezia"],#level img[src*="venice"]{display:none!important}
+#level .lm{grid-template-columns:1fr!important;max-width:900px}
