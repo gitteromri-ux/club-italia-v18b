@@ -1053,3 +1053,10 @@ html,body,a,button,*{cursor:auto}a,button,summary,[role="tab"],label{cursor:poin
  .h18 .copy.glass31 .btn,.h18 .copy.glass31 a[class*="btn"]{font-size:1.1rem!important;padding:16px 28px!important}
  .h18 .meta .facts b{font-size:1.9rem!important}.h18 .meta .facts div{font-size:.9rem!important}
 }
+@media(min-width:900px){
+ .h18 .copy.glass31{grid-template-columns:600px 250px!important;column-gap:40px!important;align-items:center!important}
+ .h18 .copy.glass31 .ctas{justify-content:flex-start!important;gap:28px!important}
+ .h18 .hero-tp{margin:0!important}
+ section.h18{height:min(84vh,780px)!important}
+ .h18 .film39{max-height:none!important}
+}
