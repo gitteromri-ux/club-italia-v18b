@@ -1037,3 +1037,9 @@ section.f41 p:not(.head p):not(.top p):not(.sub36){font-size:1rem!important}
  .h18 h1{font-size:2.5rem!important;white-space:nowrap!important;text-wrap:nowrap!important}
  .h18 .glass31 .lede{max-width:none!important;font-size:.98rem!important}
 }
+@media(min-width:900px){
+ .h18 .copy.glass31{width:fit-content!important;max-width:none!important;grid-template-columns:600px 176px!important;column-gap:40px!important;padding:28px 32px!important}
+ .h18 h1{font-size:3rem!important}
+ .h18 .glass31 .lede{font-size:1.02rem!important;max-width:600px!important}
+ .h18 .copy.glass31 .ctas{display:flex!important;justify-content:space-between!important;align-items:center!important;width:100%!important}
+}
