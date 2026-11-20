@@ -834,3 +834,10 @@ section.f41 .rc .lv{background:none!important;padding:0!important;top:16px!impor
  .hs41 .on{display:none}.hs41[aria-pressed="true"] .on{display:block}.hs41[aria-pressed="true"] .off{display:none}
  .h18 .copy.glass31{margin-top:52svh!important}
 }
+/* reel inside the hero card on desktop and tablet; phones get it full-screen */
+@media(min-width:900px){
+ .h18 .copy.glass31{display:grid!important;grid-template-columns:minmax(0,1fr) min(24vw,320px);column-gap:48px;align-items:center;max-width:min(1180px,88vw)!important}
+ .h18 .copy.glass31 .cl40{grid-column:1;grid-row:1}
+ .h18 .copy.glass31 .film39{grid-column:2;grid-row:1;position:relative!important;right:auto!important;top:auto!important;transform:none!important;width:100%!important;display:block!important}
+}
+@media(max-width:899px){.h18 .copy.glass31 .film39{display:none!important}}
