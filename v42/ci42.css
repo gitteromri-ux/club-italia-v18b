@@ -1073,3 +1073,41 @@ html,body,a,button,*{cursor:auto}a,button,summary,[role="tab"],label{cursor:poin
  .h18 .vwrap{position:absolute!important;inset:0!important;height:100%!important}
  .h18 .meta{padding-bottom:22px!important}.h18>.w{padding-bottom:22px!important}
 }
+@media(max-width:899px){
+ #classroom.f41>.w,#classroom.f41>.w.top,#classroom.f41 .track,#courses.f41>.w,#courses.f41>.w.top,#courses.f41 .track,#local.f41>.w,#local.f41>.w.top,#local.f41 .track,#syllabus.f41>.w,#syllabus.f41>.w.top,#syllabus.f41 .track,#journey.f41>.w,#journey.f41>.w.top,#journey.f41 .track,#method.f41>.w,#method.f41>.w.top,#method.f41 .track,#faculty.f41>.w,#faculty.f41>.w.top,#faculty.f41 .track,#map.f41>.w,#map.f41>.w.top,#map.f41 .track,#level.f41>.w,#level.f41>.w.top,#level.f41 .track,#stories.f41>.w,#stories.f41>.w.top,#stories.f41 .track,#enrol.f41>.w,#enrol.f41>.w.top,#enrol.f41 .track,#faq.f41>.w,#faq.f41>.w.top,#faq.f41 .track{padding-left:20px!important;padding-right:20px!important;max-width:100%!important}
+ section.f41{padding:56px 0!important;overflow:hidden!important}
+ section.f41 *{max-width:100%;box-sizing:border-box}
+ section.f41 h2{font-size:1.9rem!important;line-height:1.12!important}
+ #level.f41 .lm,#level.f41 form,#level.f41 .quiz{padding:18px!important;width:100%!important;display:block!important}
+ #level.f41 .opts{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
+ #level.f41 .opts span{white-space:normal!important}
+ #journey .milestones small{display:none!important}
+ #journey .milestones{gap:0!important;justify-content:space-between!important}
+ #method.f41 .pill3{display:grid!important;grid-template-columns:1fr!important;overflow:visible!important}
+ #method.f41 .panel{width:100%!important;flex:none!important;min-width:0!important}
+ section.f41 .cset .clabel{padding:18px 20px!important}
+ section.f41 .cset .clabel .st{display:none!important}
+ #classroom .win-bar,#classroom [class*="win"] span{font-size:.7rem!important}
+ .h18 .copy.glass31{margin-top:46svh!important}
+}
+@media(max-width:899px){
+ #method.f41 .pill3{display:block!important}
+ #method.f41 .pill3>*{display:block!important;width:100%!important;max-width:100%!important;flex:none!important;margin:0 0 12px!important}
+ #level.f41 .lm{padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
+ #level.f41 .lm>*,#level.f41 form,#level.f41 .quiz,#level.f41 fieldset{background:rgba(255,255,255,.04)!important;border:1px solid rgba(54,224,140,.3)!important;border-radius:16px!important;padding:16px!important;margin:0 0 12px!important;min-width:0!important;width:100%!important}
+ #level.f41 .lm>div:first-child{background:none!important;border:0!important;padding:0!important}
+ #level.f41 .opts{grid-template-columns:1fr 1fr!important}#level.f41 .opts>*{min-width:0!important;width:100%!important}
+ #level.f41 .opts span{display:block!important;width:100%!important;font-size:.9rem!important;padding:10px 10px 10px 34px!important}
+ .lg40{margin:0!important;padding:0!important}
+}
+@media(max-width:899px){
+ #level.f41 .lm>*,#level.f41 form,#level.f41 .quiz,#level.f41 fieldset,#level.f41 .opts label,#level.f41 .opts>*{background:none!important;border:0!important;padding:0!important;margin:0 0 14px!important;border-radius:0!important}
+ #level.f41 .lm{background:rgba(255,255,255,.04)!important;border:1px solid rgba(54,224,140,.3)!important;border-radius:16px!important;padding:18px!important}
+ #level.f41 .opts{gap:8px!important}#level.f41 .opts label,#level.f41 .opts>*{margin:0!important;position:relative}
+ #level.f41 .opts span{border:1px solid rgba(54,224,140,.35)!important;border-radius:10px!important;padding:12px 10px!important;text-align:center!important;background:rgba(255,255,255,.05)!important}
+ #level.f41 .opts input{position:absolute!important;opacity:0!important}
+ #level.f41 legend{padding:0!important;margin-bottom:8px!important}
+ #method.f41 .pill3,#method.f41 .panel{width:100%!important;max-width:none!important;min-width:0!important}
+ #method.f41>.w{display:block!important}
+}
+@media(max-width:899px){#method.f41 .pill3{padding:0!important;margin:0!important}#method.f41 .panel{padding:20px 18px 20px 62px!important}}
