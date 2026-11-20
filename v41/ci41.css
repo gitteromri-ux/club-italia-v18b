@@ -803,3 +803,10 @@ section.f41 .rc .lv{background:none!important;padding:0!important;top:16px!impor
 @media(max-width:899px){.h18 .copy.glass31{max-width:none!important;width:auto!important}}
 @keyframes kb41{from{transform:scale(1.02)}to{transform:scale(1.12)}}
 .h18 video.hr{animation:kb41 10s ease-in-out infinite alternate;transform-origin:50% 40%}
+@media(max-width:899px){
+ .h18 h1{font-size:2.6rem!important;line-height:1.05!important;white-space:normal!important;text-wrap:balance}
+ .h18 .lede,.glass31 .lede{font-size:1.05rem!important;line-height:1.55!important}
+ .h18 .copy.glass31{padding:26px 22px!important}
+ .h18 .meta,.h18 .tp,.h18 [class*="trust"]{letter-spacing:normal!important}
+}
+.h18 [class*="trust"] *{letter-spacing:.02em!important}
