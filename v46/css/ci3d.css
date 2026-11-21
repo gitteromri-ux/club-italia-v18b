@@ -39,3 +39,16 @@ body:before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
 .ci-card.z1 .cls-course-media img,.ci-card.z1 .fac-photo img{transform:scale(1.06)}.ci-card.z2 .cls-course-media img,.ci-card.z2 .fac-photo img,.img-trio .it img{transform:scale(1.02)}
 @media(prefers-reduced-motion:reduce){.ci-light:before,.ci-light:after{animation:none}.ci-card{transform:none!important}body:before{display:none}}
 @media(max-width:900px){.ci-light:before,.ci-light:after{animation:none}}
+/* phones and touch screens: same layered look on a much lighter budget */
+@media(hover:none),(max-width:900px){
+ body:before{display:none!important}
+ body>section:not(.ci-hero):not(.course-hero){box-shadow:0 -10px 22px -12px rgba(0,0,0,.4),0 -1px 0 rgba(255,255,255,.10)}
+ .ci-card,.ci-card.z1{transform:none!important;box-shadow:0 10px 22px -16px rgba(0,0,0,.4)!important;transition:transform .35s ease,box-shadow .35s ease}
+ .ci-card.z2{transform:translateY(-8px) scale(1.015)!important;box-shadow:0 26px 42px -22px rgba(0,0,0,.6)!important}
+ .cls-course-media img,.fac-photo img,.img-trio .it img{transform:none!important;transition:none!important}
+ .ci-light:before,.ci-light:after{animation:none!important}
+}
+/* safety: if the device cannot keep up, the depth layer switches itself off */
+html.no3d body:before,html.no3d .ci-light{display:none!important}
+html.no3d .ci-card{transform:none!important;transition:none!important}
+html.no3d .ci-plane,html.no3d .ci-plane-bg{transform:none!important}

@@ -21,9 +21,11 @@
     cards.forEach(function(c){io.observe(c)});
   } else cards.forEach(function(c){seen.add(c)});
   function setZ(e,z){if(e._z===z)return;e._z=z;e.classList.toggle('z1',z===1);e.classList.toggle('z2',z===2)}
-  var tick=false,lastSp=-1;
-  function frame(){
-    tick=false;var vh=innerHeight, sy=scrollY, max=Math.max(1,root.scrollHeight-vh), sp=Math.round(sy/max*200)/200;
+  var tick=false,lastSp=-1,lastT=0,slow=0,off=false;
+  function frame(t){
+    tick=false;if(off)return;
+    if(lastT&&t-lastT<400){if(t-lastT>50)slow++;else if(slow>0)slow--;if(slow>14){off=true;root.classList.add('no3d');return}}
+    lastT=t;var vh=innerHeight, sy=scrollY, max=Math.max(1,root.scrollHeight-vh), sp=Math.round(sy/max*200)/200;
     if(sp!==lastSp){lastSp=sp;root.style.setProperty('--sp',sp)}
     planes.forEach(function(e){var p=e.parentElement.getBoundingClientRect();if(p.bottom<-100||p.top>vh+100)return;e.style.setProperty('--py',Math.round((p.top+p.height/2-vh/2)*e._d)+'px')});
     seen.forEach(function(e){var r=e.getBoundingClientRect(),c=Math.abs((r.top+r.height/2-vh/2)/vh);setZ(e,c<.22?2:(c<.42?1:0))});
