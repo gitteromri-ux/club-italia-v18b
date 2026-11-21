@@ -1183,3 +1183,34 @@ section.f41 .gl-note,.gl-note{font-size:1rem!important;color:#4f4a3e!important;m
 }
 .sx-tile{aspect-ratio:1/1}
 @media(max-width:899px){.sx-tile{flex:0 0 62%;aspect-ratio:1/1}.sx-t{font-size:1.15rem}.sx-intro b{display:block;margin-bottom:6px}}
+
+/* ===== courses fold: clear hierarchy. Collection = plain heading, courses = one card shape ===== */
+section.f41 .cset .clabel,section.k38 .cset .clabel,section.k38 .cset+.cset .clabel{background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important;margin:0 0 20px!important;color:#14110c!important}
+section.f41 .cset .clabel .k{display:block!important;font:600 .78rem/1.2 Manrope,sans-serif!important;letter-spacing:.14em!important;text-transform:uppercase!important;color:#0f5638!important;margin:0 0 8px!important}
+section.f41 .cset+.cset .clabel .k{color:#8e1d27!important}
+section.f41 .cset .clabel h3{font:400 1.7rem/1.15 'Playfair Display',serif!important;color:#14110c!important;margin:0 0 8px!important}
+section.f41 .cset .clabel p{font:400 1.05rem/1.55 Manrope,sans-serif!important;color:#4f4a3e!important;margin:0!important;max-width:60ch}
+section.f41 .cset .clabel .st{display:none!important}
+section.f41 .cset{margin:0 0 56px!important;display:block!important}
+section.f41 .cset:last-child{margin-bottom:0!important}
+section.f41 .rc{border-radius:18px!important}
+@media(max-width:899px){
+ section.f41 .cset .cards{display:flex!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;gap:12px!important;padding:4px 0 10px!important;margin:0!important;scrollbar-width:none}
+ section.f41 .cset .cards::-webkit-scrollbar{display:none}
+ section.f41 .cset .cards>.rc{flex:0 0 84%!important;width:auto!important;scroll-snap-align:start;margin:0!important}
+ section.f41 .cset .clabel h3{font-size:1.45rem!important}
+ section.f41 .cset{margin-bottom:40px!important}
+ /* compact enrolment bar */
+ .enroll-console{left:12px!important;right:76px!important;bottom:12px!important;width:auto!important;max-width:none!important;padding:10px 12px 10px 14px!important;border-radius:16px!important;display:flex!important;align-items:center!important;gap:10px!important}
+ .enroll-console .ec-eyebrow{display:none!important}
+ .enroll-console .ec-title{font-size:.9rem!important;line-height:1.2!important;white-space:nowrap!important;overflow:hidden;text-overflow:ellipsis;display:block}
+ .enroll-console .ec-text{min-width:0!important;flex:1 1 auto!important}
+ .enroll-console .ec-cta{padding:9px 14px!important;font-size:.85rem!important;white-space:nowrap!important;flex:none!important}
+ .wa,.whatsapp,a[href*="wa.me"]{right:12px!important;bottom:12px!important;width:52px!important;height:52px!important}
+}
+#courses.f41 .top,#courses.f41 .top h2,#courses.f41 .top .sub36,#courses.f41 .top p,#courses.f41 .top .eb{text-align:left!important;margin-left:0!important;margin-right:0!important;display:block!important;width:auto!important;max-width:60ch!important}
+#courses.f41 .top h2{max-width:22ch!important}
+#courses.f41 .top{display:block!important;margin-bottom:44px!important}
+section.f41 .rc dl{display:grid!important;grid-template-columns:repeat(3,auto)!important;justify-content:space-between!important;gap:8px!important}
+section.f41 .rc dl div{font-size:.68rem!important}section.f41 .rc dd{font-size:.84rem!important}
+section.f41 .cset .cards,section.f41 .track{background:none!important;box-shadow:none!important}
