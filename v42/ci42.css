@@ -1263,3 +1263,24 @@ section#faculty .ft small:before{display:none!important}
 @media(min-width:900px){section#method.f41>.w{display:block!important}section#method.f41 .head{max-width:720px!important}section#journey.j38 .step:nth-child(n){transform:none;margin-top:0!important}}
 .enroll-console.away43,.away43{opacity:0!important;pointer-events:none!important;transition:opacity .3s}
 @media(min-width:900px){section#method.f41 .head{position:static!important;top:auto!important;margin:0 0 36px!important}}
+
+/* ===== v44: one type scale, one card shape, straightened heads ===== */
+section.f41 .head>p{font-size:1rem!important;line-height:1.55!important}
+section.f41 .rc h4,section.f41 .step h4,section#method.f41 .panel h3,section.f41 .sx-unit h4,section.f41 .feat6 h4,section.f41 .sx-t{font-size:1.3rem!important;line-height:1.2!important;font-weight:400!important}
+section.f41 .rc,section.f41 .step,section#method.f41 .panel,.sx-tile,.sx-panels,section.f41 .lt40,section#faculty .ft{border-radius:18px!important}
+section#classroom figcaption{text-align:left!important}
+section#classroom figcaption b{font-weight:400!important}
+#map .ms-head,#map .ms-title,#map .ms-tagline{text-align:left!important;margin-left:0!important;margin-right:0!important}
+#map .ms-head{max-width:1120px!important;margin:0 auto 24px!important;padding:0 40px!important}
+#map .ms-eyebrow{justify-content:flex-start!important;color:#f1d68f!important}
+#map .ms-eyebrow:before,#map .ms-eyebrow:after{display:none!important}
+#map .ms-title{font-size:clamp(2rem,2.8vw,2.75rem)!important;line-height:1.12!important}
+#map .ms-tagline{font-family:Manrope,sans-serif!important;font-style:normal!important;font-size:1rem!important;line-height:1.55!important;color:rgba(255,255,255,.82)!important;max-width:640px!important}
+#map .ms-tab-name{letter-spacing:0!important;font-size:1.15rem!important;line-height:1.2!important}
+#map .ms-shell{padding-top:72px!important;padding-bottom:72px!important}
+@media(max-width:899px){
+ #map .ms-head{padding:0!important}
+ #map .ms-shell{padding-top:56px!important;padding-bottom:56px!important}
+ .sx-panel .sx-units{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;overflow:visible!important;margin:0!important;padding:0!important}
+ .sx-panel .sx-unit{flex:none!important;width:auto!important;min-width:0!important;padding:16px 18px!important}
+}
