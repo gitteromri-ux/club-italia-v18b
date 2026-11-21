@@ -10,21 +10,23 @@ body:before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
             linear-gradient(180deg,rgba(255,240,210,0),rgba(10,20,60,calc(.16 * var(--sp))))}
 /* 3. drifting light planes inside each fold */
 .ci-light{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;border-radius:inherit}
-.ci-light:before,.ci-light:after{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%;will-change:transform}
+.ci-light:before,.ci-light:after{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%}
 .ci-light:before{left:-18%;top:-22%;background:radial-gradient(circle,rgba(74,222,148,.20),rgba(74,222,148,0) 68%);animation:ciDriftA 22s ease-in-out infinite alternate}
 .ci-light:after{right:-20%;bottom:-30%;background:radial-gradient(circle,rgba(216,188,133,.20),rgba(216,188,133,0) 68%);animation:ciDriftB 28s ease-in-out infinite alternate}
 .ci-light.lt:before{background:radial-gradient(circle,rgba(15,86,56,.10),rgba(15,86,56,0) 68%)}
 .ci-light.lt:after{background:radial-gradient(circle,rgba(200,169,107,.20),rgba(200,169,107,0) 68%)}
 @keyframes ciDriftA{to{transform:translate3d(26%,18%,0) scale(1.15)}}
 @keyframes ciDriftB{to{transform:translate3d(-24%,-16%,0) scale(1.2)}}
-/* 4. cards on three planes: rest, near, front. --z rises as a card nears the centre of the screen */
-.ci-card{--z:0;--rx:0deg;--ry:0deg;position:relative;transform:perspective(1100px) rotateX(var(--rx)) rotateY(var(--ry)) translate3d(0,calc(-10px * var(--z)),0) scale(calc(.965 + .035 * var(--z)))!important;
- box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 1px 2px rgba(0,0,0,.14),0 calc(8px + 14px * var(--z)) calc(16px + 22px * var(--z)) -10px rgba(0,0,0,calc(.18 + .14 * var(--z))),0 calc(22px + 40px * var(--z)) calc(46px + 60px * var(--z)) calc(-22px - 10px * var(--z)) rgba(0,0,0,calc(.26 + .30 * var(--z)))!important;
- transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s ease;will-change:transform;backface-visibility:hidden}
-.ci-spec{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;mix-blend-mode:screen;opacity:calc(.25 + .75 * var(--z));
- background:radial-gradient(320px circle at var(--lx,50%) var(--ly,0%),rgba(255,255,255,.22),rgba(255,255,255,0) 62%)}
+/* 4. cards on three planes: rest, near, front. A card steps forward as it nears the centre of the screen */
+.ci-card{position:relative;transform:translate3d(0,0,0) scale(.97)!important;transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s ease;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.14),0 10px 18px -12px rgba(0,0,0,.22),0 22px 46px -26px rgba(0,0,0,.30)!important}
+.ci-card.z1{transform:translate3d(0,-5px,0) scale(.985)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 1px 2px rgba(0,0,0,.14),0 16px 28px -14px rgba(0,0,0,.28),0 40px 76px -30px rgba(0,0,0,.42)!important}
+.ci-card.z2{transform:translate3d(0,-12px,0) scale(1)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 2px 4px rgba(0,0,0,.16),0 24px 40px -16px rgba(0,0,0,.34),0 64px 110px -34px rgba(0,0,0,.56)!important}
+.ci-card.tilt{transform:perspective(1100px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translate3d(0,-14px,0) scale(1.012)!important;transition:transform .12s ease-out,box-shadow .3s ease}
+.ci-spec{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;opacity:0;transition:opacity .3s;background:radial-gradient(300px circle at var(--lx,50%) var(--ly,0%),rgba(255,255,255,.16),rgba(255,255,255,0) 62%)}
+.ci-card.tilt .ci-spec{opacity:1}
 /* 5. parallax planes */
-[data-depth]{will-change:transform}
+
 .ci-plane{transform:translate3d(0,var(--py,0px),0)!important}
 .ci-plane-bg{transform:translate3d(0,var(--py,0px),0) scale(1.16)!important}
 @media(min-width:901px){.ci-hero .ci-reel{transform:translate3d(0,calc(-50% + var(--py,0px)),0)!important;overflow:visible!important}
@@ -33,5 +35,7 @@ body:before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
  .ci-hero .ci-reel:after{content:"";position:absolute;inset:38px -36px -36px 38px;border-radius:24px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.025);z-index:-2;transform:translate3d(0,calc(var(--py,0px) * -1.2),0)}}
 /* media inside cards sits on its own plane */
 .cls-course-media,.fac-photo,.lm-cover,.teacher-photo,.img-trio .it{overflow:hidden}
-.cls-course-media img,.fac-photo img,.img-trio .it img{transform:scale(calc(1.10 - .06 * var(--z,0)));transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.cls-course-media img,.fac-photo img,.img-trio .it img{transform:scale(1.1);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.ci-card.z1 .cls-course-media img,.ci-card.z1 .fac-photo img{transform:scale(1.06)}.ci-card.z2 .cls-course-media img,.ci-card.z2 .fac-photo img,.img-trio .it img{transform:scale(1.02)}
 @media(prefers-reduced-motion:reduce){.ci-light:before,.ci-light:after{animation:none}.ci-card{transform:none!important}body:before{display:none}}
+@media(max-width:900px){.ci-light:before,.ci-light:after{animation:none}}
