@@ -1,0 +1,65 @@
+/* Club Italia layer over the shared eTeacher school template */
+.ci-logo{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:500;font-size:1.7rem;line-height:1;color:#fff;letter-spacing:-.01em;white-space:nowrap}
+.ci-by{display:inline-flex;align-items:center;gap:6px;margin-left:10px;font:500 .62rem/1 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.ci-by img{height:15px;width:auto;display:block}
+.nav-logo{display:inline-flex;align-items:center;text-decoration:none}
+.ci-logo-f{display:block;font-size:2rem;margin-bottom:.9rem}
+h1,h2,h3,h4,.display-md,.display-sm,.display-lg{font-weight:400!important}
+.gold-ital{font-weight:400!important}
+/* hero */
+.ci-hero .hero-bg video{width:100%;height:100%;object-fit:cover;display:block}
+.ci-hero .hero-content{display:flex;align-items:flex-end;justify-content:space-between;gap:48px}
+.ci-hero-copy{max-width:640px}
+.ci-reel{flex:0 0 auto;width:min(24vw,300px);aspect-ratio:9/16;border-radius:20px;overflow:hidden;box-shadow:0 0 0 1px rgba(54,224,140,.55),0 0 60px rgba(54,224,140,.28),0 40px 80px -30px rgba(0,0,0,.8);background:#03120c}
+.ci-reel video{width:100%;height:100%;object-fit:cover;display:block}
+.ci-sound{position:absolute;z-index:6;right:max(24px,calc((100vw - 1240px)/2 + 24px));bottom:calc(min(24vw,300px)*16/9 + 80px);display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;border:1px solid rgba(54,224,140,.6);background:rgba(3,18,12,.72);color:#fff;font:600 .82rem/1 Manrope,sans-serif;letter-spacing:.06em;cursor:pointer;box-shadow:0 0 24px rgba(54,224,140,.35);backdrop-filter:blur(8px)}
+.ci-sound svg{width:18px;height:18px;fill:none;stroke:#7ff0b5;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ci-sound svg path:first-child{fill:#7ff0b5;stroke:none}
+.ci-sound .w{display:none}.ci-sound.on .w{display:block}.ci-sound.on .x{display:none}
+@media(max-width:900px){
+ .ci-reel{display:none}
+ .ci-hero .hero-content{display:block}
+ .ci-sound{right:16px;top:88px;bottom:auto}
+ .ci-logo{font-size:1.45rem}
+}
+/* live lesson */
+.ci-lesson{max-width:1080px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 0 0 1px rgba(54,224,140,.45),0 0 70px rgba(54,224,140,.2),0 40px 90px -40px rgba(0,0,0,.85)}
+.ci-lesson video{display:block;width:100%;height:auto}
+/* pillars use the Italy scenes */
+#culture .pillar video{width:100%;height:100%;object-fit:cover}
+/* no pills */
+.etg3-pill,.cls-bestseller,.lm-cover-badge{display:none!important}
+.fac-card{cursor:default}
+html body .cls-cards .cls-card .cls-bestseller{display:none!important}
+.ci-hero{min-height:min(100vh,880px)!important}
+@media(min-width:901px){.ci-hero .hero-content{align-items:center!important;padding-top:7rem!important;padding-bottom:3rem!important}
+ .ci-hero .ci-reel{position:relative}
+ .ci-hero .ci-reel .fa-sound-btn{right:12px;bottom:12px}}
+@media(max-width:900px){.lg-left h2,#lg-title{font-size:clamp(1.8rem,7.6vw,2.6rem)!important;overflow-wrap:normal}}
+@media(min-width:901px){.ci-hero .ci-reel{position:absolute!important;right:max(32px,calc((100vw - 1240px)/2 + 24px));top:54%;transform:translateY(-50%);height:min(66vh,540px);width:auto;aspect-ratio:9/16}
+ .ci-hero .ci-hero-copy{max-width:min(640px,52vw)}}
+.ci-crs-eyebrow{color:var(--gold-soft);margin-bottom:1rem}
+.etg3-dots>*{width:8px!important;height:8px!important;min-width:0!important;min-height:0!important;padding:0!important;flex:0 0 8px!important}
+@media(max-width:900px){
+ .ci-hero{display:block!important;min-height:0!important;height:auto!important;padding:0!important;background:#062A1C}
+ .ci-hero .hero-bg{position:relative!important;inset:auto!important;height:66svh;min-height:420px;width:100%}
+ .ci-hero .hero-bg:after,.ci-hero:before,.ci-hero:after{display:none!important}
+ .ci-hero .hero-content{position:relative;padding:26px 20px 34px!important;margin:0!important}
+ .ci-hero .ci-hero-copy{max-width:none}
+}
+@media(min-width:901px){
+ .ci-hero .hero-content{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding-left:max(40px,calc((100vw - 1240px)/2 + 24px))!important;padding-right:calc(max(32px,(100vw - 1240px)/2 + 24px) + 360px)!important}
+ .ci-hero .ci-hero-copy{margin:0!important;max-width:620px!important}
+ .ci-hero h1{font-size:clamp(2.6rem,4.3vw,4.1rem)!important;line-height:1.08!important}
+ .ci-hero .ci-reel{height:min(62vh,520px)!important}
+}
+@media(max-width:900px){
+ html body section.hero.ci-hero{display:block!important;min-height:0!important;height:auto!important;padding:0!important;background:#062A1C!important}
+ html body section.hero.ci-hero>.hero-bg{position:relative!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;inset:auto!important;height:54svh!important;min-height:360px!important;width:100%!important;transform:none!important;margin-top:64px}
+ html body section.hero.ci-hero>.hero-bg video{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:cover!important;transform:none!important}
+ html body section.hero.ci-hero>.hero-bg:before,html body section.hero.ci-hero>.hero-bg:after,html body section.hero.ci-hero:before,html body section.hero.ci-hero:after{display:none!important}
+ html body section.hero.ci-hero>.hero-content{position:relative!important;display:block!important;padding:26px 20px 34px!important;margin:0!important;min-height:0!important;height:auto!important;transform:none!important}
+ html body section.hero.ci-hero h1{font-size:2.3rem!important;line-height:1.1!important;margin:0 0 .8rem!important}
+}
+html body #mapstr .ms-panel-city,html body #mapstr .ms-photo-pop-city,html body #mapstr .ms-tab-name,html body #mapstr .ms-unit-fr,html body #mapstr .ms-title{font-weight:400!important}
+html body #mapstr .ms-panel-coursetag{background:none!important;border:0!important;padding:0!important;border-radius:0!important;box-shadow:none!important;color:#D8BC85!important}
