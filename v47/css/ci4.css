@@ -60,5 +60,33 @@ html body section#platform{padding-bottom:170px!important}
  html body section#platform{padding-bottom:130px!important}
 }
 @media(max-width:900px){html body section#lead-form #lg-title,html body section#lead-form #lg-title .gold-ital{font-size:1.5rem!important;line-height:1.15!important;letter-spacing:0!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}}
-@media(max-width:760px){html body section .unit-grid{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;overflow:visible!important}
- html body section .unit-grid .unit-card{width:auto!important;min-width:0!important;max-width:none!important;flex:none!important}}
+
+/* ---------- course pages: every card set in its own colours, and in sliders on the phone ---------- */
+html body section .unit-grid .unit-card,html body section .pillar-grid .pillar-card,html body section .sibling-nav .sib-card{border:0!important;background-image:none!important}
+html body section .unit-grid .unit-card:nth-child(5n+1),html body section .pillar-grid .pillar-card:nth-child(4n+1){background:#0F5638!important}
+html body section .unit-grid .unit-card:nth-child(5n+2),html body section .pillar-grid .pillar-card:nth-child(4n+4){background:#EFE2C4!important}
+html body section .unit-grid .unit-card:nth-child(5n+3),html body section .pillar-grid .pillar-card:nth-child(4n+2){background:#5A1B26!important}
+html body section .unit-grid .unit-card:nth-child(5n+4),html body section .pillar-grid .pillar-card:nth-child(4n+3){background:#14305A!important}
+html body section .unit-grid .unit-card:nth-child(5n+5){background:#1C1813!important}
+html body section .unit-grid .unit-card h4,html body section .pillar-grid .pillar-card h3{color:#fff!important}
+html body section .unit-grid .unit-card p,html body section .pillar-grid .pillar-card p{color:rgba(255,255,255,.88)!important}
+html body section .unit-grid .unit-card .u-no,html body section .pillar-grid .pillar-card .p-num{color:#E3C98F!important}
+html body section .unit-grid .unit-card:nth-child(5n+2) h4,html body section .pillar-grid .pillar-card:nth-child(4n+4) h3{color:#1C1813!important}
+html body section .unit-grid .unit-card:nth-child(5n+2) p,html body section .pillar-grid .pillar-card:nth-child(4n+4) p{color:#3F382C!important}
+html body section .unit-grid .unit-card:nth-child(5n+2) .u-no,html body section .pillar-grid .pillar-card:nth-child(4n+4) .p-num{color:#8A6A1F!important}
+html body section .sibling-nav .sib-card:nth-child(1){background:#0F5638!important}
+html body section .sibling-nav .sib-card:nth-child(2){background:#14305A!important}
+html body section .sibling-nav .sib-card *{color:#fff!important}
+html body section .pricing-grid .price-card.alt{background:#EFE2C4!important}
+html body section .pricing-grid .price-card.feature{background:#0F5638!important}
+@media(max-width:760px){
+ html body section .unit-grid,html body section .pillar-grid,html body section .pricing-grid,html body section .img-trio,html body section .sibling-nav{display:flex!important;flex-wrap:nowrap!important;grid-template-columns:none!important;gap:14px!important;overflow-x:auto!important;overflow-y:visible!important;scroll-snap-type:x mandatory!important;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-left:-20px!important;margin-right:-20px!important;padding:6px 20px 26px!important;scroll-padding-left:20px!important}
+ html body section .unit-grid::-webkit-scrollbar,html body section .pillar-grid::-webkit-scrollbar,html body section .pricing-grid::-webkit-scrollbar,html body section .img-trio::-webkit-scrollbar,html body section .sibling-nav::-webkit-scrollbar{display:none}
+ html body section .unit-grid>.unit-card,html body section .pillar-grid>.pillar-card,html body section .pricing-grid>.price-card,html body section .sibling-nav>.sib-card{flex:0 0 82vw!important;width:82vw!important;min-width:82vw!important;max-width:82vw!important;scroll-snap-align:start!important;margin:0!important;opacity:1!important}
+ html body section .img-trio>.it{flex:0 0 78vw!important;min-width:78vw!important;scroll-snap-align:start!important;aspect-ratio:4/3!important}
+ html body section .unit-grid>.unit-card{min-height:250px}
+}
+html body section .pricing-grid .price-card.alt,html body section .pricing-grid .price-card.alt p,html body section .pricing-grid .price-card.alt li,html body section .pricing-grid .price-card.alt span,html body section .pricing-grid .price-card.alt small{color:#2A241B!important}
+html body section .pricing-grid .price-card.alt .pc-amt{color:#0F5638!important}
+html body section .pricing-grid .price-card.alt .pc-tag{color:#8A6A1F!important}
+html body section .pricing-grid .price-card.alt a.btn{background:#0F5638!important;color:#fff!important;border-color:#0F5638!important}
