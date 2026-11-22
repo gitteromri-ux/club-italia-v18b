@@ -1,0 +1,57 @@
+/* v45 finish: endorsed-brand lockup, restrained surfaces, stronger type */
+.ci-lock{display:inline-flex;flex-direction:column;align-items:flex-start;gap:5px;line-height:1}
+.ci-lock .ci-logo,.ci-wordmark .ci-logo{font-family:'Playfair Display',Georgia,serif;font-style:normal;font-weight:400;font-size:1.45rem;letter-spacing:.005em;color:#fff}
+.ci-lock .ci-by,.ci-wordmark .ci-by{margin:0;display:inline-flex;align-items:center;gap:6px;font:500 .62rem/1 Manrope,sans-serif;letter-spacing:.04em;text-transform:none;font-style:italic;color:rgba(255,255,255,.8)}
+.ci-lock .ci-by img{height:15px;width:auto}
+.ci-lock-f{margin-bottom:1rem}.ci-lock-f .ci-logo{font-size:1.9rem}.ci-lock-f .ci-by img{height:20px}
+.ci-wordmark{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin:0 0 22px}
+.ci-wordmark .ci-logo{font-size:1.7rem}.ci-wordmark .ci-by{font-size:.74rem}.ci-wordmark .ci-by img{height:20px;width:auto}
+.ci-powered{font:italic 400 1.25rem/1.2 'Playfair Display',Georgia,serif;color:rgba(255,255,255,.85);margin:0 0 10px;text-align:center}
+html body .etg2-section .etg2-brand-logo{height:56px!important;width:auto!important;max-width:none!important;display:block;margin:0 auto 6px!important;filter:none!important;opacity:1!important}
+html body .etg2-section .etg2-tf-num{font-family:Manrope,sans-serif!important;font-weight:600!important;font-style:normal!important;letter-spacing:-.01em}
+/* type: body with real weight, readable on dark */
+body{font-weight:400!important}
+html body p,html body li,html body .lede,html body .hero-sub{font-weight:400!important}
+html body .on-dark p,html body .on-dark .lede,html body .culture-dark .lede,html body .hero-sub,html body .s5-lede,html body .lg-lede,html body .etg2-section .lede{color:rgba(255,255,255,.9)!important}
+html body .hero-sub{font-weight:500!important}
+/* buttons: flat, one shape */
+html body .btn,html body .nav-cta,html body .lg-submit,html body .cls-course-link{border-radius:999px!important;box-shadow:none!important;text-shadow:none!important;letter-spacing:.01em!important;text-transform:none!important;font-weight:600!important}
+html body .btn-gold,html body .nav-cta,html body .lg-submit,html body .btn-3d-primary{background:#F4EFE4!important;background-image:none!important;color:#0A2E1F!important;border:1px solid #F4EFE4!important}
+html body .bg-ivory .btn-gold,html body .bg-paper .btn-gold,html body .bg-beige-grad .btn-gold,html body .cls-course-link{background:#0F5638!important;color:#fff!important;border-color:#0F5638!important}
+html body .btn-outline{background:transparent!important;border:1px solid currentColor!important}
+/* surfaces: no glows, one soft shadow, one radius */
+.etg3-glow,.frame-border,.jul-home-glow{display:none!important}
+html body .cls-card,html body .cls-course,html body .hiw3-card,html body .s5-card,html body .etg3-card,html body .fac-card,html body .lm-card,html body .pillar,html body .ci-lesson,html body .ci-reel,html body .unit-card,html body .pillar-card,html body .price-card,html body .lg-form{box-shadow:0 20px 44px -28px rgba(0,0,0,.5)!important;border-radius:16px!important}
+html body .ci-reel,html body .ci-lesson{box-shadow:0 30px 60px -30px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.14)!important}
+html body .hiw3-tag,html body .cls-course-level{background:none!important;border:0!important;padding:0!important;border-radius:0!important;box-shadow:none!important}
+html body .cls-course-level{color:#C8A96B!important;font-weight:600!important;position:static!important;display:block;margin-bottom:.4rem}
+/* imagery: pull the generated look back toward natural */
+.cls-course-media img,.lm-cover img,.img-trio img,.ms-photo-pop-img,.teacher-photo img,.fac-photo img{filter:saturate(.82) contrast(1.02)}
+/* enrolment bar: quiet */
+html body .enroll-console{box-shadow:0 18px 40px -20px rgba(0,0,0,.6)!important;background:#0A2E1F!important;border:1px solid rgba(255,255,255,.14)!important}
+@media(max-width:900px){
+ .ci-lock .ci-logo{font-size:1.25rem}.ci-lock .ci-by img{height:13px}
+ html body p,html body .lede{font-size:1.06rem!important;line-height:1.55!important}
+ .ci-wordmark{margin-bottom:16px}
+}
+html body .site-header .ci-lock .ci-logo{font-size:1.55rem!important;line-height:1!important}
+html body .site-header .ci-lock .ci-by img,html body .nav-logo .ci-by img{height:15px!important;width:auto!important;max-width:none!important;display:block}
+html body .ci-wordmark .ci-by img{height:19px!important;width:auto!important;max-width:none!important;display:block}
+html body .ci-lock-f .ci-by img{height:20px!important;width:auto!important;max-width:none!important}
+html body .site-header .nav-logo{display:inline-flex!important;align-items:center!important}
+html body a.btn.btn-gold.btn-gold.btn-gold,html body .nav .nav-cta.nav-cta.nav-cta,html body button.lg-submit.lg-submit,html body .enroll-console .ec-cta.ec-cta,html body .enroll-console a.btn{background:#F4EFE4!important;background-image:none!important;color:#0A2E1F!important;border:1px solid #F4EFE4!important;box-shadow:none!important;text-shadow:none!important;border-radius:999px!important}
+html body .bg-ivory a.btn.btn-gold.btn-gold.btn-gold,html body .bg-paper a.btn.btn-gold.btn-gold.btn-gold,html body .bg-beige-grad a.btn.btn-gold.btn-gold.btn-gold{background:#0F5638!important;color:#fff!important;border-color:#0F5638!important}
+@media(max-width:900px){html body .site-header .ci-lock .ci-logo{font-size:1.3rem!important}html body .site-header .ci-lock .ci-by img{height:12px!important}
+ html body section.hero.ci-hero>.hero-bg{margin-top:60px}}
+html body .site-header .ci-lock .ci-by img,html body .nav-logo .ci-by img{height:13px!important}
+html body .ci-wordmark .ci-by img{height:17px!important}
+html body .ci-lock-f .ci-by img{height:17px!important}
+html body .etg2-section .etg2-brand-logo{height:40px!important}
+html body #lg-title{font-size:clamp(1.8rem,3.2vw,3rem)!important;line-height:1.12!important}
+html body #lg-title .gold-ital{display:block}
+@media(max-width:900px){html body #lg-title{font-size:1.75rem!important}html body .site-header .ci-lock .ci-by img{height:11px!important}}
+html body [class] .etg3-dots>*,html body .etg3-slider .etg3-dots>*{width:8px!important;height:8px!important;min-width:8px!important;min-height:8px!important;max-width:8px!important;max-height:8px!important;border-radius:50%!important;padding:0!important;flex:0 0 8px!important}
+html body [class] .etg3-dots{gap:8px!important;height:auto!important}
+@media(max-width:900px){html body [class] [class] .etg3-dots,html body .etg3-slider .etg3-dots{display:none!important}}
+/* Phones: a finger that lands on a slider must still scroll the page */
+html body .cls-cards,html body .cls-rail,html body .s5-grid,html body .pillars-grid,html body .culture-grid,html body .ac-power-figs,html body #hiw3-journey,html body .hiw3-steps,html body .tctr-badges,html body .fac-gallery,html body .tst-track,html body .etg3-track,html body [class*="-track"],html body [class*="-rail"],html body [class*="-slider"],html body [class*="-swiper"],html body #mapstr .ms-tabs,html body .unit-grid,html body .pricing-grid,html body .pillar-grid,html body .img-trio,html body .sibling-nav{touch-action:pan-x pan-y!important;overscroll-behavior:auto!important;overscroll-behavior-y:auto!important}

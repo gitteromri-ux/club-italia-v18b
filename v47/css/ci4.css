@@ -1,0 +1,64 @@
+/* v47: fewer green folds, wider phone cards, depth as real overlapping layers */
+/* ---------- palette: each dark fold gets its own colour ---------- */
+html body section#method-fold{background:radial-gradient(90% 60% at 20% 0%,#2A241B 0%,#15120E 60%)!important}
+html body section#culture{background:radial-gradient(90% 60% at 80% 0%,#5A1B26 0%,#2B0D13 62%)!important}
+html body section#taste{background:radial-gradient(90% 70% at 50% 0%,#241F18 0%,#12100C 65%)!important}
+html body section#mapstr,html body #mapstr .ms-root{background:#0B0F0D!important}
+html body section#platform{background:radial-gradient(90% 60% at 50% 0%,#14305A 0%,#0A1730 62%)!important}
+html body section.cta-band{background:radial-gradient(90% 80% at 50% 0%,#5A1B26 0%,#2B0D13 65%)!important}
+html body footer.site-footer{background:#12100C!important}
+html body section#method-fold .s5-card{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.12)!important}
+html body section#platform .etg2-trust{background:rgba(255,255,255,.05)!important;border-color:rgba(255,255,255,.14)!important}
+.ci-light:before{background:radial-gradient(circle,rgba(216,188,133,.16),rgba(216,188,133,0) 68%)!important}
+.ci-light:after{background:radial-gradient(circle,rgba(255,255,255,.07),rgba(255,255,255,0) 68%)!important}
+/* course pages */
+html body .course-hero + section.bg-navy-grad{background:radial-gradient(90% 60% at 20% 0%,#2A241B 0%,#15120E 60%)!important}
+html body section.bg-navy-grad:has(.teacher-block){background:radial-gradient(90% 60% at 80% 0%,#5A1B26 0%,#2B0D13 62%)!important}
+html body section.pricing-band{background:radial-gradient(90% 60% at 50% 0%,#14305A 0%,#0A1730 62%)!important}
+html body section.closing-nav{background:#15120E!important}
+html body section.final-cta{background:radial-gradient(90% 80% at 50% 0%,#5A1B26 0%,#2B0D13 65%)!important}
+/* ---------- depth: layers that overlap, nothing that pops ---------- */
+.ci-card,.ci-card.z1,.ci-card.z2{transform:none!important;box-shadow:0 1px 0 rgba(255,255,255,.14) inset,0 2px 6px rgba(0,0,0,.14),0 18px 30px -18px rgba(0,0,0,.34),0 44px 70px -40px rgba(0,0,0,.5)!important}
+@media(hover:hover) and (pointer:fine){.ci-card.tilt{transform:perspective(1200px) rotateX(calc(var(--rx,0deg) * .6)) rotateY(calc(var(--ry,0deg) * .6)) translate3d(0,-10px,0)!important}}
+/* course card: the copy panel rides over the photograph */
+html body .cls-course{overflow:hidden!important}
+html body .cls-course .cls-course-media{aspect-ratio:4/3.3!important;height:auto!important}
+html body .cls-course .cls-course-body{position:relative!important;z-index:2;margin-top:-34px!important;border-radius:22px 22px 0 0!important;box-shadow:0 -18px 30px -16px rgba(0,0,0,.6)!important;padding-top:22px!important}
+/* like a local: caption on a floating plate over the footage */
+html body #culture .pillar .pillar-body{position:absolute!important;left:12px!important;right:12px!important;bottom:12px!important;top:auto!important;height:auto!important;padding:16px 18px!important;border-radius:16px!important;background:rgba(24,10,12,.72)!important;border:1px solid rgba(255,255,255,.16)!important;box-shadow:0 18px 30px -16px rgba(0,0,0,.7)!important}
+html body #culture .pillar:after,html body #culture .pillar:before{display:none!important}
+/* live lesson: a screen standing on two plates */
+html body .ci-lesson{position:relative;overflow:visible!important;box-shadow:0 40px 70px -34px rgba(0,0,0,.85)!important}
+html body .ci-lesson video{position:relative;z-index:2;border-radius:16px;display:block}
+html body .ci-lesson:before,html body .ci-lesson:after{content:"";position:absolute;border-radius:18px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);z-index:0}
+html body .ci-lesson:before{inset:14px -12px -14px 12px}
+html body .ci-lesson:after{inset:28px -24px -28px 24px;border-color:rgba(255,255,255,.08);background:rgba(255,255,255,.02)}
+/* placement card straddles the fold above it */
+html body section#placement{overflow:visible!important;z-index:3}
+html body section#placement .lm-card{margin-top:-120px!important;position:relative;z-index:5;box-shadow:0 2px 6px rgba(0,0,0,.2),0 50px 90px -40px rgba(0,0,0,.7)!important}
+html body section#platform{padding-bottom:170px!important}
+/* hero plate floating on the reel */
+.ci-float{display:none}
+@media(max-width:900px){
+ html body section.hero.ci-hero>.hero-bg{height:62svh!important}
+ .ci-float{display:flex;flex-direction:column;gap:3px;position:absolute;left:16px;bottom:62px;z-index:4;padding:12px 16px;border-radius:14px;background:rgba(6,20,14,.62);border:1px solid rgba(255,255,255,.2);box-shadow:0 18px 30px -14px rgba(0,0,0,.7);transform:translate3d(0,calc(var(--py,0px) * -.5),0)}
+ .ci-float b{font:600 .95rem/1.1 Manrope,sans-serif;color:#fff}
+ .ci-float span{font:500 .8rem/1.2 Manrope,sans-serif;color:rgba(255,255,255,.82)}
+ html body section.hero.ci-hero>.hero-content{margin-top:-40px!important;border-radius:28px 28px 0 0!important;background:#062A1C!important;box-shadow:0 -22px 40px -18px rgba(0,0,0,.7)!important;z-index:5!important;padding-top:30px!important}
+ html body section.hero.ci-hero>.hero-bg .fa-sound-btn{bottom:58px!important}
+}
+/* ---------- phone: cards wide enough to read ---------- */
+@media(max-width:760px){
+ html body section .cls-cards .cls-card{flex:0 0 86vw!important;min-width:86vw!important;max-width:86vw!important}
+ html body section .hiw3-steps .hiw3-card,html body section #hiw3-journey .hiw3-card{flex:0 0 82vw!important;min-width:82vw!important;max-width:82vw!important;height:auto!important;min-height:0!important}
+ html body section .s5-grid .s5-card{flex:0 0 82vw!important;min-width:82vw!important;max-width:82vw!important;height:auto!important;min-height:0!important}
+ html body section .cls-rail .cls-course{flex:0 0 84vw!important;min-width:84vw!important;max-width:84vw!important}
+ html body #mapstr .ms-tabs .ms-tab{flex:0 0 72vw!important;min-width:72vw!important}
+ html body .ci-lesson{margin:0 -4px!important}
+ html body .ci-lesson video{aspect-ratio:3/2;object-fit:cover;width:100%}
+ html body section#placement .lm-card{margin-top:-90px!important}
+ html body section#platform{padding-bottom:130px!important}
+}
+@media(max-width:900px){html body section#lead-form #lg-title,html body section#lead-form #lg-title .gold-ital{font-size:1.5rem!important;line-height:1.15!important;letter-spacing:0!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}}
+@media(max-width:760px){html body section .unit-grid{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;overflow:visible!important}
+ html body section .unit-grid .unit-card{width:auto!important;min-width:0!important;max-width:none!important;flex:none!important}}
