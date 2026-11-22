@@ -90,3 +90,37 @@ html body section .pricing-grid .price-card.alt,html body section .pricing-grid 
 html body section .pricing-grid .price-card.alt .pc-amt{color:#0F5638!important}
 html body section .pricing-grid .price-card.alt .pc-tag{color:#8A6A1F!important}
 html body section .pricing-grid .price-card.alt a.btn{background:#0F5638!important;color:#fff!important;border-color:#0F5638!important}
+/* ---------- map: a real full-colour map of Italy, wide, one colour per level ---------- */
+html body section#mapstr,html body #mapstr .ms-root{background:#F4EFE4!important}
+html body #mapstr .ms-title,html body #mapstr .ms-head h2{color:#14110C!important}
+html body #mapstr .ms-title .gold-ital,html body #mapstr .ms-title em{color:#8A6A1F!important}
+html body #mapstr .ms-tagline{color:#4A4336!important}
+html body #mapstr .ms-eyebrow{color:#8A6A1F!important}
+html body #mapstr .ms-map{background:#BFD9E6!important}
+html body #mapstr .ms-stage{border-radius:20px!important;overflow:hidden!important;box-shadow:0 30px 60px -34px rgba(0,0,0,.5),0 0 0 1px rgba(20,17,12,.12)!important;border:0!important}
+html body #mapstr .ms-compact .ms-stage,html body #mapstr .ms-stage{height:min(80vh,720px)!important;min-height:520px!important}
+html body #mapstr .ms-stage:before,html body #mapstr .ms-stage:after,html body #mapstr .ms-vignette{display:none!important}
+html body #mapstr .ms-marker-pin{width:26px!important;height:26px!important;border-radius:50%!important;background:var(--mc,#0F5638)!important;border:3px solid #fff!important;box-shadow:0 3px 10px rgba(0,0,0,.45)!important;display:grid!important;place-items:center!important;transform:none!important}
+html body #mapstr .ms-marker-pin b{font:700 12px/1 Manrope,sans-serif;color:#fff}
+html body #mapstr .ms-marker-pin:before,html body #mapstr .ms-marker-pin:after,html body #mapstr .ms-marker:before,html body #mapstr .ms-marker:after{display:none!important}
+html body #mapstr .ms-marker-dot .ms-marker-pin{width:18px!important;height:18px!important;border-width:2.5px!important}
+html body #mapstr .ms-marker.active .ms-marker-pin,html body #mapstr .ms-marker:hover .ms-marker-pin{transform:scale(1.3)!important;box-shadow:0 0 0 5px rgba(255,255,255,.7),0 6px 16px rgba(0,0,0,.5)!important}
+html body #mapstr .ms-marker-label{background:#fff!important;color:#14110C!important;font:600 12px/1.1 Manrope,sans-serif!important;padding:5px 8px!important;border-radius:8px!important;box-shadow:0 4px 12px rgba(0,0,0,.3)!important;text-shadow:none!important;margin-top:4px!important;border:0!important;letter-spacing:0!important;text-transform:none!important;opacity:1!important}
+html body #mapstr .ms-marker-dot .ms-marker-label{display:none!important}
+html body #mapstr .ms-tab{border:0!important;box-shadow:0 14px 26px -16px rgba(0,0,0,.5)!important;background-image:none!important}
+html body #mapstr .ms-tab:nth-child(1){background:#1C1813!important}
+html body #mapstr .ms-tab:nth-child(2){background:#0F7A4D!important}
+html body #mapstr .ms-tab:nth-child(3){background:#B3262F!important}
+html body #mapstr .ms-tab:nth-child(4){background:#1F4E9E!important}
+html body #mapstr .ms-tab:nth-child(5){background:#B67A12!important}
+html body #mapstr .ms-tab *{color:#fff!important}
+html body #mapstr .ms-tab.active{outline:3px solid #14110C!important;outline-offset:3px}
+html body #mapstr .ms-legend{background:rgba(255,255,255,.94)!important;border:0!important;box-shadow:0 8px 20px rgba(0,0,0,.25)!important}
+html body #mapstr .ms-legend *{color:#14110C!important}
+@media(max-width:760px){
+ html body #mapstr .ms-stage{width:100vw!important;max-width:100vw!important;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;border-radius:0!important;height:560px!important;min-height:0!important}
+}
+@media(max-width:760px){
+ html body #mapstr .ms-stage{height:auto!important;min-height:0!important;display:block!important}
+ html body #mapstr .ms-stage>.ms-map,html body #mapstr .ms-map{height:560px!important;min-height:560px!important;width:100%!important}
+}

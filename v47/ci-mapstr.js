@@ -9,6 +9,8 @@
     'https://c.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png',
     'https://d.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png'
   ];
+  var LC = {ci1:'#0F7A4D',ci2:'#B3262F',ci3:'#1F4E9E',ci4:'#B67A12'};
+  DATA.courses.forEach(function(c){ if(LC[c.id]){ c.color = LC[c.id]; c.routeColor = LC[c.id]; } });
   var ATTRIB = '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors © <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> © <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a>';
   var FRANCE_CENTER = [12.6, 42.2];
   var FRANCE_ZOOM = 5.0;
@@ -57,7 +59,7 @@
     return {
       id: ALL_ID, name: 'All Journeys', level: 'Every region of Italy',
       shortLevel: 'ALL', region: 'Every city and region', href: '#courses',
-      color: '#7FF0B5', routeColor: '#7FF0B5',
+      color: '#0F5638', routeColor: '#0F5638',
       description: 'Every place Club Italia teaches across the four levels.',
       pins: pins, routeOrder: order, isAll: true
     };
@@ -158,7 +160,7 @@
       tabs.children[0].classList.add('active');
       return { root: root, setJourney: function () {}, openStop: function () {}, closePanel: function () {} };
     }
-    var style = 'https://tiles.openfreemap.org/styles/dark';
+    var style = 'https://tiles.openfreemap.org/styles/liberty';
     map = new maplibregl.Map({
       container: mapEl.id,
       style: style,
@@ -166,21 +168,13 @@
       zoom: (window.innerWidth <= 760) ? (FRANCE_ZOOM - 0.4) : (compact ? FRANCE_ZOOM - 0.2 : FRANCE_ZOOM),
       pitch: MAP_PITCH,
       bearing: MAP_BEARING,
-      minZoom: 3.8,
+      minZoom: 4.4,
       maxZoom: 12,
       maxPitch: 70,
       attributionControl: false,
       cooperativeGestures: compact,
       dragRotate: true,
       pitchWithRotate: true
-    });
-    map.on('style.load', function () {
-      try {
-        map.setPaintProperty('background', 'background-color', '#03120C');
-        map.setPaintProperty('water', 'fill-color', '#052418');
-        map.setPaintProperty('landuse_park', 'fill-color', '#0A2E1F');
-        map.setPaintProperty('landcover_wood', 'fill-color', '#0A2E1F');
-      } catch (e) {}
     });
     map.addControl(new maplibregl.AttributionControl({ compact: true }), 'bottom-right');
     map.once('load', function () { document.querySelectorAll('#mapstr .maplibregl-ctrl-attrib').forEach(function (e) { e.classList.remove('maplibregl-compact-show'); }); });
@@ -189,25 +183,12 @@
     map.on('load', function () {
       ready = true;
       try {
-        map.addSource('france', { type: 'geojson', data: FRANCE_GEO });
-        map.addLayer({
-          id: 'world-dim', type: 'background',
-          paint: { 'background-color': '#03120C', 'background-opacity': 0.42 }
-        });
-        map.addLayer({
-          id: 'france-fill', type: 'fill', source: 'france',
-          paint: { 'fill-color': '#36E08C', 'fill-opacity': 0.16 }
-        });
-        map.addLayer({
-          id: 'france-glow', type: 'line', source: 'france',
-          layout: { 'line-join': 'round', 'line-cap': 'round' },
-          paint: { 'line-color': '#7FF0B5', 'line-width': 9, 'line-blur': 8, 'line-opacity': 0.55 }
-        });
-        map.addLayer({
-          id: 'france-line', type: 'line', source: 'france',
-          layout: { 'line-join': 'round', 'line-cap': 'round' },
-          paint: { 'line-color': '#D6FFE9', 'line-width': 2, 'line-opacity': 0.95 }
-        });
+        var LY = { 'line-join': 'round', 'line-cap': 'round' };
+        map.addSource('ms-route', { type: 'geojson', data: emptyFC() });
+        map.addSource('ms-route-anim', { type: 'geojson', data: emptyFC() });
+        map.addLayer({ id: 'ms-route-case', type: 'line', source: 'ms-route', layout: LY, paint: { 'line-color': '#ffffff', 'line-width': 8, 'line-opacity': 0.92 } });
+        map.addLayer({ id: 'ms-route-line', type: 'line', source: 'ms-route', layout: LY, paint: { 'line-color': '#0F5638', 'line-width': 4.5 } });
+        map.addLayer({ id: 'ms-route-anim', type: 'line', source: 'ms-route-anim', layout: LY, paint: { 'line-color': '#ffffff', 'line-width': 2.5, 'line-opacity': 0.95 } });
       } catch (e) {  }
       setJourney(ALL_ID, false);
     });
@@ -282,8 +263,9 @@
         node.setAttribute('role', 'button');
         node.setAttribute('tabindex', '0');
         node.setAttribute('aria-label', isAll ? p.city : (p.city + ', stop ' + (idx + 1)));
+        node.style.setProperty('--mc', LC[String(p.id).split('-')[0]] || course.color || '#0F5638');
         node.innerHTML =
-          '<span class="ms-marker-pin"></span>' +
+          '<span class="ms-marker-pin">' + (isAll ? '' : '<b>' + (idx + 1) + '</b>') + '</span>' +
           '<span class="ms-marker-label">' + esc(p.city) + '</span>';
         node.addEventListener('click', function (ev) { ev.stopPropagation(); openStop(course, p, idx); });
         node.addEventListener('keydown', function (ev) {
@@ -399,19 +381,25 @@
       var pins = orderedPinsX(course);
       var coords = pins.map(function (p) { return [p.lng, p.lat]; });
       if (isAll) {
-        var ba = new maplibregl.LngLatBounds();
-        coords.forEach(function (c) { ba.extend(c); });
+        var ba = new maplibregl.LngLatBounds([6.55, 36.55], [18.6, 47.15]);
         var isNarrowA = (window.matchMedia && window.matchMedia('(max-width:760px)').matches) || window.innerWidth <= 760;
         map.fitBounds(ba, {
-          padding: isNarrowA ? { top: 60, bottom: 90, left: 34, right: 34 }
-                             : { top: 90, bottom: 90, left: 70, right: 70 },
+          padding: isNarrowA ? { top: 14, bottom: 14, left: 6, right: 6 }
+                             : { top: 24, bottom: 24, left: 40, right: 40 },
           pitch: 0,
           bearing: 0,
           duration: userInitiated ? 1200 : 0,
-          maxZoom: isNarrowA ? 5.6 : 6.0
+          maxZoom: isNarrowA ? 7 : 6.8
         });
-        return; // no route, no auto-open in all mode
+        try { if (animTimer) { clearInterval(animTimer); animTimer = null; } map.getSource('ms-route').setData(emptyFC()); map.getSource('ms-route-anim').setData(emptyFC()); } catch (e) {}
+        return;
       }
+      try {
+        var rc = coords.length > 2 ? smoothPath(coords, 16) : coords;
+        map.getSource('ms-route').setData(lineFeature(rc));
+        map.setPaintProperty('ms-route-line', 'line-color', course.routeColor || '#0F5638');
+        animateRoute(rc);
+      } catch (e) {}
       var b = new maplibregl.LngLatBounds();
       coords.forEach(function (c) { b.extend(c); });
       var isNarrow = (window.matchMedia && window.matchMedia('(max-width:760px)').matches) ||
