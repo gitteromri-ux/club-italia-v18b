@@ -50,3 +50,4 @@ html:not(#z):not(#y) body section#platform{padding-bottom:96px!important}
 html:not(#z):not(#y) body section#placement{padding-bottom:22px!important}
 html:not(#z):not(#y) body section#placement .lm-body{padding-bottom:22px!important}
 }
+@media(max-width:345px){html:not(#z):not(#y) body section.hero.ci-hero h1{font-size:10.2vw!important}}
