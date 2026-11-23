@@ -1,0 +1,53 @@
+/* v51: open hero with a clean film, no clipped cards, larger collection cards, tighter folds */
+html:not(#z):not(#y) body section p{text-wrap:pretty}
+html:not(#z):not(#y) body section .lede,html:not(#z):not(#y) body section .lede-c{text-wrap:balance}
+@media(max-width:900px){
+/* hero */
+html:not(#z):not(#y) body section.hero.ci-hero>.hero-bg{height:80vw!important;min-height:0!important;margin-top:60px!important}
+html:not(#z):not(#y) body section.hero.ci-hero>.hero-bg .fa-sound-btn{display:none!important}
+html:not(#z):not(#y) body section.hero.ci-hero .ci-hero-copy{padding:30px 22px 40px!important}
+html:not(#z):not(#y) body section.hero.ci-hero .ci-wordmark{margin:0 0 22px!important}
+html:not(#z):not(#y) body section.hero.ci-hero h1{font-size:clamp(2.2rem,11.4vw,3.1rem)!important;line-height:1.1!important;margin:0 0 22px!important;padding:0!important;letter-spacing:-.005em!important}
+html:not(#z):not(#y) body section.hero.ci-hero h1+p,html:not(#z):not(#y) body section.hero.ci-hero .hero-sub,html:not(#z):not(#y) body section.hero.ci-hero .ci-hero-copy p{font-size:1.14rem!important;line-height:1.55!important;margin:0 0 28px!important}
+
+/* collection cards */
+html:not(#z):not(#y) body section#courses .cls-card{padding:26px 24px 26px!important}
+html:not(#z):not(#y) body section#courses .cls-card .cls-card-eyebrow{font-size:.95rem!important;letter-spacing:.06em!important;margin-bottom:14px!important}
+html:not(#z):not(#y) body section#courses .cls-card .cls-card-title{font-size:2.1rem!important;line-height:1.1!important;margin-bottom:10px!important}
+html:not(#z):not(#y) body section#courses .cls-card .cls-card-sub{font:400 1.12rem/1.45 Manrope,sans-serif!important;font-style:normal!important;margin-bottom:18px!important}
+html:not(#z):not(#y) body section#courses .cls-card .cls-card-meta{gap:16px 14px!important;padding-top:18px!important;margin-bottom:20px!important}
+html:not(#z):not(#y) body section#courses .cls-card .cls-meta-val{font-size:1.6rem!important;line-height:1.1!important}
+html:not(#z):not(#y) body section#courses .cls-card .cls-meta-key{font-size:1rem!important;letter-spacing:0!important;text-transform:none!important}
+html:not(#z):not(#y) body section#courses .cls-card .cls-card-action-text{font-size:1.05rem!important}
+
+/* journey cards: nothing clipped */
+html:not(#z):not(#y) body section#how-it-works .hiw3-journey .hiw3-step{flex:0 0 82vw!important;width:82vw!important;min-width:82vw!important;max-width:82vw!important;margin:0!important;padding:0!important;box-sizing:border-box!important}
+html:not(#z):not(#y) body section#how-it-works .hiw3-journey{gap:14px!important}
+html:not(#z):not(#y) body section#how-it-works .hiw3-step .hiw3-card{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;margin:0!important;padding:24px 22px!important;overflow:hidden!important}
+html:not(#z):not(#y) body section#how-it-works .hiw3-step .hiw3-card *{max-width:100%!important;white-space:normal!important}
+
+/* teachers: shorter portraits */
+html:not(#z):not(#y) body section#teachers .fac-card .fac-photo{aspect-ratio:4/4.2!important;max-height:none!important}
+
+/* tighter folds */
+html:not(#z):not(#y) body>section:not(.ci-hero):not(.course-hero){padding-top:44px!important;padding-bottom:36px!important}
+html:not(#z):not(#y) body section#courses .cls-rail,html:not(#z):not(#y) body section#courses [id^="cls-track"]{margin-top:8px!important;padding-top:0!important}
+html:not(#z):not(#y) body section [class*="-dots"]{margin:12px auto 0!important;padding:0!important}
+html:not(#z):not(#y) body section#how-it-works .hiw3-cta,html:not(#z):not(#y) body section#how-it-works .hiw3-foot{margin-top:18px!important}
+html:not(#z):not(#y) body section#platform .etg3-slider{margin-top:18px!important}
+html:not(#z):not(#y) body section#platform .etg2-foot,html:not(#z):not(#y) body section#platform .etg3-foot{margin-top:18px!important;padding:0!important}
+html:not(#z):not(#y) body section#platform{padding-bottom:110px!important}
+html:not(#z):not(#y) body section#mapstr{padding-bottom:20px!important}
+
+/* footer: company links in two columns, no orphan column */
+html:not(#z):not(#y) body footer.site-footer .footer-top>.footer-col:last-child{grid-column:1/-1!important;display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:18px!important}
+html:not(#z):not(#y) body footer.site-footer .footer-top>.footer-col:last-child h4{grid-column:1/-1!important}
+}
+@media(max-width:900px){
+html:not(#z):not(#y) body section#faq .faq-list,html:not(#z):not(#y) body section#faq .faq,html:not(#z):not(#y) body section#faq .section-head+*{margin-top:18px!important}
+html:not(#z):not(#y) body section#faq .section-head,html:not(#z):not(#y) body section#faq header{margin-bottom:14px!important;padding-bottom:0!important}
+html:not(#z):not(#y) body section#platform{padding-bottom:96px!important}
+html:not(#z):not(#y) body section#placement{padding-bottom:22px!important}
+html:not(#z):not(#y) body section#placement .lm-body{padding-bottom:22px!important}
+}
+@media(max-width:345px){html:not(#z):not(#y) body section.hero.ci-hero h1{font-size:10.2vw!important}}

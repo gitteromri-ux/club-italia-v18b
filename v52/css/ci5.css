@@ -1,0 +1,42 @@
+/* v49: lit Italian palette (emerald, rosso, navy, gold, cream), shorter method fold, easy way back on the map */
+/* ---------- folds ---------- */
+html body section#method-fold{background:radial-gradient(120% 90% at 12% 0%,#C9303E 0%,#9A1D2C 42%,#5F0F1C 100%)!important}
+html body section#method-fold .s5-card{background:rgba(255,255,255,.10)!important;border:1px solid rgba(255,255,255,.24)!important}
+html body section#method-fold .s5-eyebrow,html body section#method-fold .s5-num,html body section#method-fold .s5-fr,html body section#method-fold .gold-ital{color:#F3D9A0!important}
+html body section#culture{background:#F6F1E7!important}
+html body section#culture .display-md,html body section#culture h2{color:#14110C!important}
+html body section#culture h2 .gold-ital{color:#A0221F!important}
+html body section#culture .lede{color:#4A4336!important}
+html body section#teachers{background:#EDE3CF!important}
+html body section#taste{background:radial-gradient(100% 80% at 50% 0%,#22946A 0%,#0D5A3D 48%,#063523 100%)!important}
+html body section#platform{background:radial-gradient(110% 75% at 50% 0%,#2E68C0 0%,#163C80 45%,#0A1F4A 100%)!important}
+html body section.cta-band{background:linear-gradient(135deg,#F3DDA6 0%,#DDB45A 100%)!important}
+html body section.cta-band h2,html body section.cta-band .display-md{color:#14110C!important}
+html body section.cta-band h2 .gold-ital{color:#8E1B2A!important}
+html body section.cta-band .lede{color:#3A3122!important}
+html body section.cta-band a.btn.btn-gold.btn-gold.btn-gold{background:#0F5638!important;border-color:#0F5638!important;color:#fff!important}
+html body footer.site-footer{background:#06261A!important}
+/* course pages */
+html body .course-hero + section.bg-navy-grad{background:radial-gradient(120% 90% at 12% 0%,#C9303E 0%,#9A1D2C 42%,#5F0F1C 100%)!important}
+html body section.bg-navy-grad:has(.teacher-block){background:radial-gradient(100% 80% at 50% 0%,#22946A 0%,#0D5A3D 48%,#063523 100%)!important}
+html body section.pricing-band{background:radial-gradient(110% 75% at 50% 0%,#2E68C0 0%,#163C80 45%,#0A1F4A 100%)!important}
+html body section.closing-nav{background:#F6F1E7!important}
+html body section.final-cta{background:linear-gradient(135deg,#F3DDA6 0%,#DDB45A 100%)!important}
+html body section.final-cta h2{color:#14110C!important}
+html body section.final-cta h2 .gold-ital{color:#8E1B2A!important}
+html body section.final-cta p,html body section.final-cta .eyebrow{color:#3A3122!important}
+html body section.final-cta a.btn.btn-gold.btn-gold.btn-gold{background:#0F5638!important;border-color:#0F5638!important;color:#fff!important}
+html body section.final-cta a.btn.btn-outline{color:#14110C!important;border-color:#14110C!important}
+/* ---------- method fold: short ---------- */
+@media(max-width:900px){
+ html body section#method-fold{padding-top:56px!important;padding-bottom:44px!important}
+ html body section#method-fold .s5-cred{display:none!important}
+ html body section#method-fold .s5-title{font-size:1.75rem!important;line-height:1.14!important;margin-bottom:.7rem!important}
+ html body section#method-fold .s5-head{margin-bottom:1.4rem!important}
+ html body section#method-fold .s5-lede{font-size:1rem!important}
+ html body section#method-fold .s5-card{padding:20px 20px 22px!important}
+}
+@media(min-width:901px){html body section#method-fold{padding-top:84px!important;padding-bottom:72px!important}html body section#method-fold .s5-cred{margin-top:28px!important}}
+/* ---------- map: always an obvious way back ---------- */
+html body #mapstr .ms-back{position:absolute;left:12px;top:12px;z-index:6;display:none;align-items:center;gap:6px;height:44px;padding:0 18px;border-radius:999px;border:0;background:#14110C;color:#fff;font:600 .95rem/1 Manrope,sans-serif;box-shadow:0 10px 24px -8px rgba(0,0,0,.55);cursor:pointer}
+html body #mapstr .ms-panel-close{position:static!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;width:auto!important;height:44px!important;padding:0 18px!important;margin:0 0 14px!important;border-radius:999px!important;border:0!important;background:#F4EFE4!important;color:#14110C!important;font:600 .95rem/1 Manrope,sans-serif!important;box-shadow:none!important;transform:none!important;float:none!important}

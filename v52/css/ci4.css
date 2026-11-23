@@ -1,0 +1,154 @@
+/* v47: fewer green folds, wider phone cards, depth as real overlapping layers */
+/* ---------- palette: each dark fold gets its own colour ---------- */
+html body section#method-fold{background:radial-gradient(90% 60% at 20% 0%,#2A241B 0%,#15120E 60%)!important}
+html body section#culture{background:radial-gradient(90% 60% at 80% 0%,#5A1B26 0%,#2B0D13 62%)!important}
+html body section#taste{background:radial-gradient(90% 70% at 50% 0%,#241F18 0%,#12100C 65%)!important}
+html body section#mapstr,html body #mapstr .ms-root{background:#0B0F0D!important}
+html body section#platform{background:radial-gradient(90% 60% at 50% 0%,#14305A 0%,#0A1730 62%)!important}
+html body section.cta-band{background:radial-gradient(90% 80% at 50% 0%,#5A1B26 0%,#2B0D13 65%)!important}
+html body footer.site-footer{background:#12100C!important}
+html body section#method-fold .s5-card{background:rgba(255,255,255,.05)!important;border:1px solid rgba(255,255,255,.12)!important}
+html body section#platform .etg2-trust{background:rgba(255,255,255,.05)!important;border-color:rgba(255,255,255,.14)!important}
+.ci-light:before{background:radial-gradient(circle,rgba(216,188,133,.16),rgba(216,188,133,0) 68%)!important}
+.ci-light:after{background:radial-gradient(circle,rgba(255,255,255,.07),rgba(255,255,255,0) 68%)!important}
+/* course pages */
+html body .course-hero + section.bg-navy-grad{background:radial-gradient(90% 60% at 20% 0%,#2A241B 0%,#15120E 60%)!important}
+html body section.bg-navy-grad:has(.teacher-block){background:radial-gradient(90% 60% at 80% 0%,#5A1B26 0%,#2B0D13 62%)!important}
+html body section.pricing-band{background:radial-gradient(90% 60% at 50% 0%,#14305A 0%,#0A1730 62%)!important}
+html body section.closing-nav{background:#15120E!important}
+html body section.final-cta{background:radial-gradient(90% 80% at 50% 0%,#5A1B26 0%,#2B0D13 65%)!important}
+/* ---------- depth: layers that overlap, nothing that pops ---------- */
+.ci-card,.ci-card.z1,.ci-card.z2{transform:none!important;box-shadow:0 1px 0 rgba(255,255,255,.14) inset,0 2px 6px rgba(0,0,0,.14),0 18px 30px -18px rgba(0,0,0,.34),0 44px 70px -40px rgba(0,0,0,.5)!important}
+@media(hover:hover) and (pointer:fine){.ci-card.tilt{transform:perspective(1200px) rotateX(calc(var(--rx,0deg) * .6)) rotateY(calc(var(--ry,0deg) * .6)) translate3d(0,-10px,0)!important}}
+/* course card: the copy panel rides over the photograph */
+html body .cls-course{overflow:hidden!important}
+html body .cls-course .cls-course-media{aspect-ratio:4/3.3!important;height:auto!important}
+html body .cls-course .cls-course-body{position:relative!important;z-index:2;margin-top:-34px!important;border-radius:22px 22px 0 0!important;box-shadow:0 -18px 30px -16px rgba(0,0,0,.6)!important;padding-top:22px!important}
+/* like a local: caption on a floating plate over the footage */
+html body #culture .pillar .pillar-body{position:absolute!important;left:12px!important;right:12px!important;bottom:12px!important;top:auto!important;height:auto!important;padding:16px 18px!important;border-radius:16px!important;background:rgba(24,10,12,.72)!important;border:1px solid rgba(255,255,255,.16)!important;box-shadow:0 18px 30px -16px rgba(0,0,0,.7)!important}
+html body #culture .pillar:after,html body #culture .pillar:before{display:none!important}
+/* live lesson: a screen standing on two plates */
+html body .ci-lesson{position:relative;overflow:visible!important;box-shadow:0 40px 70px -34px rgba(0,0,0,.85)!important}
+html body .ci-lesson video{position:relative;z-index:2;border-radius:16px;display:block}
+html body .ci-lesson:before,html body .ci-lesson:after{content:"";position:absolute;border-radius:18px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);z-index:0}
+html body .ci-lesson:before{inset:14px -12px -14px 12px}
+html body .ci-lesson:after{inset:28px -24px -28px 24px;border-color:rgba(255,255,255,.08);background:rgba(255,255,255,.02)}
+/* placement card straddles the fold above it */
+html body section#placement{overflow:visible!important;z-index:3}
+html body section#placement .lm-card{margin-top:-120px!important;position:relative;z-index:5;box-shadow:0 2px 6px rgba(0,0,0,.2),0 50px 90px -40px rgba(0,0,0,.7)!important}
+html body section#platform{padding-bottom:170px!important}
+/* hero plate floating on the reel */
+.ci-float{display:none}
+@media(max-width:900px){
+ html body section.hero.ci-hero>.hero-bg{height:62svh!important}
+ .ci-float{display:flex;flex-direction:column;gap:3px;position:absolute;left:16px;bottom:62px;z-index:4;padding:12px 16px;border-radius:14px;background:rgba(6,20,14,.62);border:1px solid rgba(255,255,255,.2);box-shadow:0 18px 30px -14px rgba(0,0,0,.7);transform:translate3d(0,calc(var(--py,0px) * -.5),0)}
+ .ci-float b{font:600 .95rem/1.1 Manrope,sans-serif;color:#fff}
+ .ci-float span{font:500 .8rem/1.2 Manrope,sans-serif;color:rgba(255,255,255,.82)}
+ html body section.hero.ci-hero>.hero-content{margin-top:-40px!important;border-radius:28px 28px 0 0!important;background:#062A1C!important;box-shadow:0 -22px 40px -18px rgba(0,0,0,.7)!important;z-index:5!important;padding-top:30px!important}
+ html body section.hero.ci-hero>.hero-bg .fa-sound-btn{bottom:58px!important}
+}
+/* ---------- phone: cards wide enough to read ---------- */
+@media(max-width:760px){
+ html body section .cls-cards .cls-card{flex:0 0 86vw!important;min-width:86vw!important;max-width:86vw!important}
+ html body section .hiw3-steps .hiw3-card,html body section #hiw3-journey .hiw3-card{flex:0 0 82vw!important;min-width:82vw!important;max-width:82vw!important;height:auto!important;min-height:0!important}
+ html body section .s5-grid .s5-card{flex:0 0 82vw!important;min-width:82vw!important;max-width:82vw!important;height:auto!important;min-height:0!important}
+ html body section .cls-rail .cls-course{flex:0 0 84vw!important;min-width:84vw!important;max-width:84vw!important}
+ html body #mapstr .ms-tabs .ms-tab{flex:0 0 72vw!important;min-width:72vw!important}
+ html body .ci-lesson{margin:0 -4px!important}
+ html body .ci-lesson video{aspect-ratio:3/2;object-fit:cover;width:100%}
+ html body section#placement .lm-card{margin-top:-90px!important}
+ html body section#platform{padding-bottom:130px!important}
+}
+@media(max-width:900px){html body section#lead-form #lg-title,html body section#lead-form #lg-title .gold-ital{font-size:1.5rem!important;line-height:1.15!important;letter-spacing:0!important;overflow-wrap:normal!important;word-break:normal!important;hyphens:none!important}}
+
+/* ---------- course pages: every card set in its own colours, and in sliders on the phone ---------- */
+html body section .unit-grid .unit-card,html body section .pillar-grid .pillar-card,html body section .sibling-nav .sib-card{border:0!important;background-image:none!important}
+html body section .unit-grid .unit-card:nth-child(5n+1),html body section .pillar-grid .pillar-card:nth-child(4n+1){background:#0F5638!important}
+html body section .unit-grid .unit-card:nth-child(5n+2),html body section .pillar-grid .pillar-card:nth-child(4n+4){background:#EFE2C4!important}
+html body section .unit-grid .unit-card:nth-child(5n+3),html body section .pillar-grid .pillar-card:nth-child(4n+2){background:#5A1B26!important}
+html body section .unit-grid .unit-card:nth-child(5n+4),html body section .pillar-grid .pillar-card:nth-child(4n+3){background:#14305A!important}
+html body section .unit-grid .unit-card:nth-child(5n+5){background:#1C1813!important}
+html body section .unit-grid .unit-card h4,html body section .pillar-grid .pillar-card h3{color:#fff!important}
+html body section .unit-grid .unit-card p,html body section .pillar-grid .pillar-card p{color:rgba(255,255,255,.88)!important}
+html body section .unit-grid .unit-card .u-no,html body section .pillar-grid .pillar-card .p-num{color:#E3C98F!important}
+html body section .unit-grid .unit-card:nth-child(5n+2) h4,html body section .pillar-grid .pillar-card:nth-child(4n+4) h3{color:#1C1813!important}
+html body section .unit-grid .unit-card:nth-child(5n+2) p,html body section .pillar-grid .pillar-card:nth-child(4n+4) p{color:#3F382C!important}
+html body section .unit-grid .unit-card:nth-child(5n+2) .u-no,html body section .pillar-grid .pillar-card:nth-child(4n+4) .p-num{color:#8A6A1F!important}
+html body section .sibling-nav .sib-card:nth-child(1){background:#0F5638!important}
+html body section .sibling-nav .sib-card:nth-child(2){background:#14305A!important}
+html body section .sibling-nav .sib-card *{color:#fff!important}
+html body section .pricing-grid .price-card.alt{background:#EFE2C4!important}
+html body section .pricing-grid .price-card.feature{background:#0F5638!important}
+@media(max-width:760px){
+ html body section .unit-grid,html body section .pillar-grid,html body section .pricing-grid,html body section .img-trio,html body section .sibling-nav{display:flex!important;flex-wrap:nowrap!important;grid-template-columns:none!important;gap:14px!important;overflow-x:auto!important;overflow-y:visible!important;scroll-snap-type:x mandatory!important;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-left:-20px!important;margin-right:-20px!important;padding:6px 20px 26px!important;scroll-padding-left:20px!important}
+ html body section .unit-grid::-webkit-scrollbar,html body section .pillar-grid::-webkit-scrollbar,html body section .pricing-grid::-webkit-scrollbar,html body section .img-trio::-webkit-scrollbar,html body section .sibling-nav::-webkit-scrollbar{display:none}
+ html body section .unit-grid>.unit-card,html body section .pillar-grid>.pillar-card,html body section .pricing-grid>.price-card,html body section .sibling-nav>.sib-card{flex:0 0 82vw!important;width:82vw!important;min-width:82vw!important;max-width:82vw!important;scroll-snap-align:start!important;margin:0!important;opacity:1!important}
+ html body section .img-trio>.it{flex:0 0 78vw!important;min-width:78vw!important;scroll-snap-align:start!important;aspect-ratio:4/3!important}
+ html body section .unit-grid>.unit-card{min-height:250px}
+}
+html body section .pricing-grid .price-card.alt,html body section .pricing-grid .price-card.alt p,html body section .pricing-grid .price-card.alt li,html body section .pricing-grid .price-card.alt span,html body section .pricing-grid .price-card.alt small{color:#2A241B!important}
+html body section .pricing-grid .price-card.alt .pc-amt{color:#0F5638!important}
+html body section .pricing-grid .price-card.alt .pc-tag{color:#8A6A1F!important}
+html body section .pricing-grid .price-card.alt a.btn{background:#0F5638!important;color:#fff!important;border-color:#0F5638!important}
+/* ---------- map: a real full-colour map of Italy, wide, one colour per level ---------- */
+html body section#mapstr,html body #mapstr .ms-root{background:#F4EFE4!important}
+html body #mapstr .ms-title,html body #mapstr .ms-head h2{color:#14110C!important}
+html body #mapstr .ms-title .gold-ital,html body #mapstr .ms-title em{color:#8A6A1F!important}
+html body #mapstr .ms-tagline{color:#4A4336!important}
+html body #mapstr .ms-eyebrow{color:#8A6A1F!important}
+html body #mapstr .ms-map{background:#BFD9E6!important}
+html body #mapstr .ms-stage{border-radius:20px!important;overflow:hidden!important;box-shadow:0 30px 60px -34px rgba(0,0,0,.5),0 0 0 1px rgba(20,17,12,.12)!important;border:0!important}
+html body #mapstr .ms-compact .ms-stage,html body #mapstr .ms-stage{height:min(80vh,720px)!important;min-height:520px!important}
+html body #mapstr .ms-stage:before,html body #mapstr .ms-stage:after,html body #mapstr .ms-vignette{display:none!important}
+html body #mapstr .ms-marker-pin{width:26px!important;height:26px!important;border-radius:50%!important;background:var(--mc,#0F5638)!important;border:3px solid #fff!important;box-shadow:0 3px 10px rgba(0,0,0,.45)!important;display:grid!important;place-items:center!important;transform:none!important}
+html body #mapstr .ms-marker-pin b{font:700 12px/1 Manrope,sans-serif;color:#fff}
+html body #mapstr .ms-marker-pin:before,html body #mapstr .ms-marker-pin:after,html body #mapstr .ms-marker:before,html body #mapstr .ms-marker:after{display:none!important}
+html body #mapstr .ms-marker-dot .ms-marker-pin{width:18px!important;height:18px!important;border-width:2.5px!important}
+html body #mapstr .ms-marker.active .ms-marker-pin,html body #mapstr .ms-marker:hover .ms-marker-pin{transform:scale(1.3)!important;box-shadow:0 0 0 5px rgba(255,255,255,.7),0 6px 16px rgba(0,0,0,.5)!important}
+html body #mapstr .ms-marker-label{background:#fff!important;color:#14110C!important;font:600 12px/1.1 Manrope,sans-serif!important;padding:5px 8px!important;border-radius:8px!important;box-shadow:0 4px 12px rgba(0,0,0,.3)!important;text-shadow:none!important;margin-top:4px!important;border:0!important;letter-spacing:0!important;text-transform:none!important;opacity:1!important}
+html body #mapstr .ms-marker-dot .ms-marker-label{display:none!important}
+html body #mapstr .ms-tab{border:0!important;box-shadow:0 14px 26px -16px rgba(0,0,0,.5)!important;background-image:none!important}
+html body #mapstr .ms-tab:nth-child(1){background:#1C1813!important}
+html body #mapstr .ms-tab:nth-child(2){background:#0F7A4D!important}
+html body #mapstr .ms-tab:nth-child(3){background:#B3262F!important}
+html body #mapstr .ms-tab:nth-child(4){background:#1F4E9E!important}
+html body #mapstr .ms-tab:nth-child(5){background:#B67A12!important}
+html body #mapstr .ms-tab *{color:#fff!important}
+html body #mapstr .ms-tab.active{outline:3px solid #14110C!important;outline-offset:3px}
+html body #mapstr .ms-legend{background:rgba(255,255,255,.94)!important;border:0!important;box-shadow:0 8px 20px rgba(0,0,0,.25)!important}
+html body #mapstr .ms-legend *{color:#14110C!important}
+@media(max-width:760px){
+ html body #mapstr .ms-stage{width:100vw!important;max-width:100vw!important;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important;border-radius:0!important;height:560px!important;min-height:0!important}
+}
+@media(max-width:760px){
+ html body #mapstr .ms-stage{height:auto!important;min-height:0!important;display:block!important}
+ html body #mapstr .ms-stage>.ms-map,html body #mapstr .ms-map{height:560px!important;min-height:560px!important;width:100%!important}
+}
+/* ---------- v48: clear the clutter ---------- */
+html body .enroll-console{display:none!important}
+@media(max-width:760px){html body .cls-arrow{display:none!important}}
+/* map: the frame is the map, labels are readable, one marker per city in the overview */
+html body #mapstr .ms-tagline{font-family:Manrope,sans-serif!important;font-style:normal!important;font-size:1.05rem!important;line-height:1.5!important}
+html body #mapstr .ms-marker-dot .ms-marker-label{display:block!important}
+html body #mapstr .ms-marker:not(.ms-marker-dot) .ms-marker-label{display:none!important}
+html body #mapstr .ms-marker:not(.ms-marker-dot).active .ms-marker-label{display:block!important}
+html body #mapstr .ms-marker-dot .ms-marker-pin{width:20px!important;height:20px!important}
+html body #mapstr .ms-tab.active{outline:0!important;box-shadow:0 0 0 3px #F4EFE4,0 0 0 5px #14110C,0 14px 26px -16px rgba(0,0,0,.5)!important}
+html body #mapstr .ms-legend{left:12px!important;bottom:12px!important;top:auto!important;right:auto!important;position:absolute!important;margin:0!important;z-index:5}
+@media(max-width:760px){
+ html body #mapstr .ms-stage{height:560px!important;min-height:560px!important;max-height:none!important;display:block!important;position:relative!important;overflow:hidden!important}
+ html body #mapstr .ms-stage>.ms-map,html body #mapstr .ms-map{position:absolute!important;top:0!important;left:0!important;right:0!important;bottom:0!important;height:100%!important;min-height:0!important;width:100%!important}
+ html body #mapstr .ms-legend{bottom:14px!important}
+ html body section#platform .etg2-trust{display:grid!important;grid-template-columns:1fr 1fr!important;gap:18px 10px!important}
+ html body section#platform .etg2-trust .etg2-sep{display:none!important}
+}
+html body #mapstr .ms-marker-label{white-space:nowrap!important;max-width:none!important;width:auto!important;overflow:visible!important;text-overflow:clip!important;font-size:12px!important;display:block}
+@media(max-width:760px){
+ html body #mapstr .ms-stage>.ms-map,html body #mapstr .ms-map{position:relative!important;top:auto!important;bottom:auto!important;height:560px!important;min-height:560px!important;max-height:none!important}
+}
+html body #mapstr .ms-marker-dot{display:block!important;width:20px!important;height:20px!important}
+html body #mapstr .ms-marker-dot .ms-marker-label{position:absolute!important;left:calc(100% + 6px)!important;top:50%!important;transform:translateY(-50%)!important;margin:0!important}
+@media(max-width:760px){
+ html body #mapstr .ms-legend{display:none!important}
+ html body #mapstr .ms-stage{padding:0!important;height:560px!important;min-height:0!important;overflow:hidden!important}
+}

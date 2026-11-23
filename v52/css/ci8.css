@@ -1,0 +1,13 @@
+/* v52: one type system. Playfair Display 400 for display, Manrope 400 for text and 500 for labels and buttons. No synthesized bold, no stretched tracking, no capitals. */
+html:not(#z):not(#y):not(#x):not(#w) body,html:not(#z):not(#y):not(#x):not(#w) body *{font-synthesis:none!important;font-weight:400!important;letter-spacing:0!important;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html:not(#z):not(#y):not(#x):not(#w) body :is(.btn,button,.nav-cta,.lg-submit,.cls-course-link,.cls-card-action-text,.link-arrow,.eyebrow,.s5-eyebrow,.lg-eyebrow,.ms-eyebrow,.cls-card-eyebrow,.cls-course-level,.hiw3-kick,.hiw3-tag,.pillar-num,.ms-tab-level,.etg2-tf-lab,.cls-meta-key,.tp-rating,label,.footer-col h4,.hm-k,.pc-tag,.sib-dir,.unit-num,.fac-region,.cls-course-region,.nav-link,.ms-back,.ms-panel-close){font-family:Manrope,sans-serif!important;font-weight:500!important;font-style:normal!important;text-transform:none!important}
+html:not(#z):not(#y):not(#x):not(#w) body :is(.btn,button,.nav-cta,.lg-submit,.cls-course-link,.link-arrow) *{font-weight:500!important}
+html:not(#z):not(#y):not(#x):not(#w) body :is(.eyebrow,.s5-eyebrow,.lg-eyebrow,.ms-eyebrow,.cls-card-eyebrow,.cls-course-level,.hiw3-kick){letter-spacing:.03em!important}
+html:not(#z):not(#y):not(#x):not(#w) body :is(.hiw3-name,.s5-cardtt,.pillar-title,.etg3-card h3,.unit-card h3,.pillar-card h3,.cls-meta-val,.hiw3-num,.han-lvl,.etg3-no,.s5-num,.etg2-tf-num){font-family:"Playfair Display",serif!important;font-weight:400!important;text-shadow:none!important}
+html:not(#z):not(#y):not(#x):not(#w) body section :is(.lede,.s5-lede,.lg-lede,.pillar-desc,p,li){font-weight:400!important}
+html:not(#z):not(#y):not(#x):not(#w) body section .s5-fr,html:not(#z):not(#y):not(#x):not(#w) body section .lg-form-title{font-family:Manrope,sans-serif!important;font-style:normal!important;font-weight:500!important}
+html:not(#z):not(#y):not(#x):not(#w) body .ci-by{font-style:normal!important;font-weight:400!important}
+html:not(#z):not(#y):not(#x):not(#w) body section :is(h1,h2,h3,h4) em,html:not(#z):not(#y):not(#x):not(#w) body section .gold-ital,html:not(#z):not(#y):not(#x):not(#w) body section .ms-ital{font-weight:400!important}
+@media(max-width:900px){html:not(#z):not(#y):not(#x):not(#w) body section.hero.ci-hero h1{font-size:clamp(2rem,10.8vw,3rem)!important}}
+@media(max-width:345px){html:not(#z):not(#y):not(#x):not(#w) body section.hero.ci-hero h1{font-size:10vw!important}}
+html:not(#z):not(#y):not(#x):not(#w) body,html:not(#z):not(#y):not(#x):not(#w) body *{font-variant-numeric:lining-nums!important;font-feature-settings:"lnum" 1!important}
