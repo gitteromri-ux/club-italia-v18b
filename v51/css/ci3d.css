@@ -1,0 +1,54 @@
+/* Depth system: stacked folds, layered light, cards that come forward, parallax planes */
+:root{--sp:0}
+/* 1. folds as stacked sheets */
+body>section:not(.ci-hero):not(.course-hero){position:relative;border-radius:30px 30px 0 0;margin-top:-30px;box-shadow:0 -26px 60px -22px rgba(0,0,0,.5),0 -1px 0 rgba(255,255,255,.10)}
+body>section.ci-hero,body>section.course-hero{padding-bottom:30px}
+body>section>.wrap,body>section>.cw,body>section>.cw-narrow,body>section>.s5-wrap,body>section>.lg-wrap,body>section>.wrap-narrow{position:relative;z-index:2}
+/* 2. a light that travels across the page as you scroll (time of day) */
+body:before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.5;
+ background:radial-gradient(60% 55% at calc(8% + 84% * var(--sp)) calc(6% + 22% * var(--sp)),rgba(255,222,160,.20),rgba(255,222,160,0) 70%),
+            linear-gradient(180deg,rgba(255,240,210,0),rgba(10,20,60,calc(.16 * var(--sp))))}
+/* 3. drifting light planes inside each fold */
+.ci-light{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;border-radius:inherit}
+.ci-light:before,.ci-light:after{content:"";position:absolute;width:70%;aspect-ratio:1;border-radius:50%}
+.ci-light:before{left:-18%;top:-22%;background:radial-gradient(circle,rgba(74,222,148,.20),rgba(74,222,148,0) 68%);animation:ciDriftA 22s ease-in-out infinite alternate}
+.ci-light:after{right:-20%;bottom:-30%;background:radial-gradient(circle,rgba(216,188,133,.20),rgba(216,188,133,0) 68%);animation:ciDriftB 28s ease-in-out infinite alternate}
+.ci-light.lt:before{background:radial-gradient(circle,rgba(15,86,56,.10),rgba(15,86,56,0) 68%)}
+.ci-light.lt:after{background:radial-gradient(circle,rgba(200,169,107,.20),rgba(200,169,107,0) 68%)}
+@keyframes ciDriftA{to{transform:translate3d(26%,18%,0) scale(1.15)}}
+@keyframes ciDriftB{to{transform:translate3d(-24%,-16%,0) scale(1.2)}}
+/* 4. cards on three planes: rest, near, front. A card steps forward as it nears the centre of the screen */
+.ci-card{position:relative;transform:translate3d(0,0,0) scale(.97)!important;transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s ease;
+ box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 1px 2px rgba(0,0,0,.14),0 10px 18px -12px rgba(0,0,0,.22),0 22px 46px -26px rgba(0,0,0,.30)!important}
+.ci-card.z1{transform:translate3d(0,-5px,0) scale(.985)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 1px 2px rgba(0,0,0,.14),0 16px 28px -14px rgba(0,0,0,.28),0 40px 76px -30px rgba(0,0,0,.42)!important}
+.ci-card.z2{transform:translate3d(0,-12px,0) scale(1)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 2px 4px rgba(0,0,0,.16),0 24px 40px -16px rgba(0,0,0,.34),0 64px 110px -34px rgba(0,0,0,.56)!important}
+.ci-card.tilt{transform:perspective(1100px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translate3d(0,-14px,0) scale(1.012)!important;transition:transform .12s ease-out,box-shadow .3s ease}
+.ci-spec{position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:3;opacity:0;transition:opacity .3s;background:radial-gradient(300px circle at var(--lx,50%) var(--ly,0%),rgba(255,255,255,.16),rgba(255,255,255,0) 62%)}
+.ci-card.tilt .ci-spec{opacity:1}
+/* 5. parallax planes */
+
+.ci-plane{transform:translate3d(0,var(--py,0px),0)!important}
+.ci-plane-bg{transform:translate3d(0,var(--py,0px),0) scale(1.16)!important}
+@media(min-width:901px){.ci-hero .ci-reel{transform:translate3d(0,calc(-50% + var(--py,0px)),0)!important;overflow:visible!important}
+ .ci-hero .ci-reel video{border-radius:20px}
+ .ci-hero .ci-reel:before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:22px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:-1;transform:translate3d(0,calc(var(--py,0px) * -.6),0)}
+ .ci-hero .ci-reel:after{content:"";position:absolute;inset:38px -36px -36px 38px;border-radius:24px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.025);z-index:-2;transform:translate3d(0,calc(var(--py,0px) * -1.2),0)}}
+/* media inside cards sits on its own plane */
+.cls-course-media,.fac-photo,.lm-cover,.teacher-photo,.img-trio .it{overflow:hidden}
+.cls-course-media img,.fac-photo img,.img-trio .it img{transform:scale(1.1);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.ci-card.z1 .cls-course-media img,.ci-card.z1 .fac-photo img{transform:scale(1.06)}.ci-card.z2 .cls-course-media img,.ci-card.z2 .fac-photo img,.img-trio .it img{transform:scale(1.02)}
+@media(prefers-reduced-motion:reduce){.ci-light:before,.ci-light:after{animation:none}.ci-card{transform:none!important}body:before{display:none}}
+@media(max-width:900px){.ci-light:before,.ci-light:after{animation:none}}
+/* phones and touch screens: same layered look on a much lighter budget */
+@media(hover:none),(max-width:900px){
+ body:before{display:none!important}
+ body>section:not(.ci-hero):not(.course-hero){box-shadow:0 -10px 22px -12px rgba(0,0,0,.4),0 -1px 0 rgba(255,255,255,.10)}
+ .ci-card,.ci-card.z1{transform:none!important;box-shadow:0 10px 22px -16px rgba(0,0,0,.4)!important;transition:transform .35s ease,box-shadow .35s ease}
+ .ci-card.z2{transform:translateY(-8px) scale(1.015)!important;box-shadow:0 26px 42px -22px rgba(0,0,0,.6)!important}
+ .cls-course-media img,.fac-photo img,.img-trio .it img{transform:none!important;transition:none!important}
+ .ci-light:before,.ci-light:after{animation:none!important}
+}
+/* safety: if the device cannot keep up, the depth layer switches itself off */
+html.no3d body:before,html.no3d .ci-light{display:none!important}
+html.no3d .ci-card{transform:none!important;transition:none!important}
+html.no3d .ci-plane,html.no3d .ci-plane-bg{transform:none!important}
